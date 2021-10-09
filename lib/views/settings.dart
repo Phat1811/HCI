@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:hci_layout/views/history.dart';
 
@@ -38,7 +39,13 @@ class _SettingsState extends State<Settings> {
           ListTile(
             leading: Icon(Icons.history),
             title: Text('History'),
-            onTap: () => {},
+            onTap: () => {
+              Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => History(),
+                  ),)
+            },
             tileColor: Colors.white,
           ),
           Divider(height: 1,color: Color(0xff6f6fe),),
