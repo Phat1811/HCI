@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import './schedulebook.dart';
 
 class ProfilePage2 extends StatelessWidget {
   const ProfilePage2({Key? key}) : super(key: key);
@@ -170,7 +171,7 @@ class ProfilePage2 extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => ProfilePage2()));
+                                builder: (context) => BookPage()));
                       },
                       child: Text("Đặt lịch"),
                     ),
