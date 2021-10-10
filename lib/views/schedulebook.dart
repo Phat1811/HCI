@@ -36,173 +36,205 @@ class _HomeCalendarPageState extends State<BookPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            TableCalendar(
-              focusedDay: DateTime.now(),
-              firstDay: DateTime(1990),
-              lastDay: DateTime(2050),
-            ),
-            // TableCalendar(
-            //   initialCalendarFormat: CalendarFormat.month,
-            //   calendarStyle: CalendarStyle(
-            //       todayColor: Colors.green,
-            //       selectedColor: Theme.of(context).primaryColor,
-            //       todayStyle: TextStyle(
-            //           fontWeight: FontWeight.bold,
-            //           fontSize: 22.0,
-            //           color: Colors.white)),
-            //   headerStyle: HeaderStyle(
-            //     centerHeaderTitle: true,
-            //     formatButtonDecoration: BoxDecoration(
-            //       color: Colors.green,
-            //       borderRadius: BorderRadius.circular(22.0),
-            //     ),
-            //     formatButtonTextStyle: TextStyle(color: Colors.white),
-            //     formatButtonShowsNext: false,
-            //   ),
-            //   startingDayOfWeek: StartingDayOfWeek.monday,
-            //   builders: CalendarBuilders(
-            //     selectedDayBuilder: (context, date, events) => Container(
-            //         margin: const EdgeInsets.all(5.0),
-            //         alignment: Alignment.center,
-            //         decoration: BoxDecoration(
-            //             color: Theme.of(context).primaryColor,
-            //             borderRadius: BorderRadius.circular(8.0)),
-            //         child: Text(
-            //           date.day.toString(),
-            //           style: TextStyle(color: Colors.white),
-            //         )),
-            //     todayDayBuilder: (context, date, events) => Container(
-            //         margin: const EdgeInsets.all(5.0),
-            //         alignment: Alignment.center,
-            //         decoration: BoxDecoration(
-            //             color: Colors.green,
-            //             borderRadius: BorderRadius.circular(8.0)),
-            //         child: Text(
-            //           date.day.toString(),
-            //           style: TextStyle(color: Colors.white),
-            //         )),
-            //   ),
-            //   calendarController: _controller,
-            // ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("assets/backgrond.png"), fit: BoxFit.cover)),
+        child: Padding(
+          padding: const EdgeInsets.only(top: 30),
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                new Text(
-                  'Availible time:',
-                ),
-                new Text(
-                  '13:00 - 19:00',
-                ),
-              ],
-            ),
-            Column(
-              children: <Widget>[
-                Card(
-                  child: Row(children: <Widget>[
-                    Container(
-                      margin: EdgeInsets.symmetric(
-                        vertical: 5,
-                        horizontal: 5,
-                      ),
-                      padding: EdgeInsets.all(20),
+                Container(
+                  child: TableCalendar(
+                    calendarStyle: CalendarStyle(
+                      defaultTextStyle: TextStyle(color: Colors.white),
+                      weekendTextStyle: TextStyle(color: Colors.white),
                     ),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          'Từ                                                             ',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.normal),
-                        ),
-                        Text(
-                          '13:30',
-                          style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.normal,
-                              color: Colors.green),
-                        ),
-                      ],
-                    )
-                  ]),
-                ),
-                Card(
-                  child: Row(children: <Widget>[
-                    Container(
-                      margin: EdgeInsets.symmetric(
-                        vertical: 5,
-                        horizontal: 5,
-                      ),
-                      padding: EdgeInsets.all(20),
+                    headerStyle: HeaderStyle(
+                      formatButtonTextStyle: TextStyle(color: Colors.white),
+                      titleTextStyle: TextStyle(color: Colors.white),
+                      leftChevronIcon: Icon(Icons.arrow_back_ios,
+                          size: 15, color: Colors.white),
+                      rightChevronIcon: Icon(Icons.arrow_forward_ios,
+                          size: 15, color: Colors.white),
                     ),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          'Đến                                                           ',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.normal),
-                        ),
-                        Text(
-                          '15:30',
-                          style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.normal,
-                              color: Colors.green),
-                        ),
-                      ],
-                    )
-                  ]),
+                    focusedDay: DateTime.now(),
+                    firstDay: DateTime(1990),
+                    lastDay: DateTime(2050),
+                  ),
                 ),
-                Card(
-                  child: Row(children: <Widget>[
-                    Container(
-                      margin: EdgeInsets.symmetric(
-                        vertical: 15,
-                        horizontal: 80,
-                      ),
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.black,
-                          width: 2,
-                        ),
-                      ),
-                      padding: EdgeInsets.all(10),
-                      child: Text(
-                        '100 Coin',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
+                // TableCalendar(
+                //   initialCalendarFormat: CalendarFormat.month,
+                //   calendarStyle: CalendarStyle(
+                //       todayColor: Colors.green,
+                //       selectedColor: Theme.of(context).primaryColor,
+                //       todayStyle: TextStyle(
+                //           fontWeight: FontWeight.bold,
+                //           fontSize: 22.0,
+                //           color: Colors.white)),
+                //   headerStyle: HeaderStyle(
+                //     centerHeaderTitle: true,
+                //     formatButtonDecoration: BoxDecoration(
+                //       color: Colors.green,
+                //       borderRadius: BorderRadius.circular(22.0),
+                //     ),
+                //     formatButtonTextStyle: TextStyle(color: Colors.white),
+                //     formatButtonShowsNext: false,
+                //   ),
+                //   startingDayOfWeek: StartingDayOfWeek.monday,
+                //   builders: CalendarBuilders(
+                //     selectedDayBuilder: (context, date, events) => Container(
+                //         margin: const EdgeInsets.all(5.0),
+                //         alignment: Alignment.center,
+                //         decoration: BoxDecoration(
+                //             color: Theme.of(context).primaryColor,
+                //             borderRadius: BorderRadius.circular(8.0)),
+                //         child: Text(
+                //           date.day.toString(),
+                //           style: TextStyle(color: Colors.white),
+                //         )),
+                //     todayDayBuilder: (context, date, events) => Container(
+                //         margin: const EdgeInsets.all(5.0),
+                //         alignment: Alignment.center,
+                //         decoration: BoxDecoration(
+                //             color: Colors.green,
+                //             borderRadius: BorderRadius.circular(8.0)),
+                //         child: Text(
+                //           date.day.toString(),
+                //           style: TextStyle(color: Colors.white),
+                //         )),
+                //   ),
+                //   calendarController: _controller,
+                // ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    new Text(
+                      'Availible time:',
+                      style: TextStyle(
                           fontSize: 20,
-                          color: Colors.green,
-                        ),
-                      ),
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
                     ),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        new SizedBox(
-                          width: 150.0,
-                          height: 70.0,
-                          child: RaisedButton(
-                            child: Text(
-                              'Xác nhận',
-                              style: TextStyle(fontSize: 22.0),
+                    new Text(
+                      '13:00 - 19:00',
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
+                  ],
+                ),
+                Column(
+                  children: <Widget>[
+                    Card(
+                      child: Row(children: <Widget>[
+                        Container(
+                          margin: EdgeInsets.symmetric(
+                            vertical: 5,
+                            horizontal: 5,
+                          ),
+                          padding: EdgeInsets.all(20),
+                        ),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              'Từ                                                             ',
+                              style: TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.normal),
                             ),
-                            color: Colors.green,
-                            textColor: Colors.white,
-                            onPressed: () {},
+                            Text(
+                              '13:30',
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.normal,
+                                  color: Colors.green),
+                            ),
+                          ],
+                        )
+                      ]),
+                    ),
+                    Card(
+                      child: Row(children: <Widget>[
+                        Container(
+                          margin: EdgeInsets.symmetric(
+                            vertical: 5,
+                            horizontal: 5,
+                          ),
+                          padding: EdgeInsets.all(20),
+                        ),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              'Đến                                                           ',
+                              style: TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.normal),
+                            ),
+                            Text(
+                              '15:30',
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.normal,
+                                  color: Colors.green),
+                            ),
+                          ],
+                        )
+                      ]),
+                    ),
+                    Card(
+                      child: Row(children: <Widget>[
+                        Container(
+                          margin: EdgeInsets.symmetric(
+                            vertical: 15,
+                            horizontal: 80,
+                          ),
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.black,
+                              width: 2,
+                            ),
+                          ),
+                          padding: EdgeInsets.all(8),
+                          child: Text(
+                            '100 Coin',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                              color: Colors.green,
+                            ),
                           ),
                         ),
-                      ],
-                    )
-                  ]),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            new SizedBox(
+                              width: 120.0,
+                              height: 70.0,
+                              child: RaisedButton(
+                                child: Text(
+                                  'Xác nhận',
+                                  style: TextStyle(fontSize: 20.0),
+                                ),
+                                color: Colors.green,
+                                textColor: Colors.white,
+                                onPressed: () {},
+                              ),
+                            ),
+                          ],
+                        )
+                      ]),
+                    ),
+                  ],
                 ),
               ],
             ),
-          ],
+          ),
         ),
       ),
     );

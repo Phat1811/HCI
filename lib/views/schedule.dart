@@ -17,15 +17,15 @@ class _HomeCalendarPageState extends State<HomeCalendarPage> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            TableCalendar(
-              focusedDay: DateTime.now(),
-              firstDay: DateTime(1990),
-              lastDay: DateTime(2050),
-            ),
-            /*TableCalendar(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          TableCalendar(
+            focusedDay: DateTime.now(),
+            firstDay: DateTime(1990),
+            lastDay: DateTime(2050),
+          ),
+          /*TableCalendar(
               initialCalendarFormat: CalendarFormat.month,
               calendarStyle: CalendarStyle(
                   todayColor: Colors.red[400],
@@ -68,90 +68,90 @@ class _HomeCalendarPageState extends State<HomeCalendarPage> {
               ),
               calendarController: _controller,
             ),*/
-            Column(
-              children: <Widget>[
-                Card(
-                  child: Row(children: <Widget>[
-                    Container(
-                      margin: EdgeInsets.symmetric(
-                        vertical: 10,
-                        horizontal: 15,
-                      ),
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.black,
-                          width: 2,
-                        ),
-                      ),
-                      padding: EdgeInsets.all(10),
-                      child: Text(
-                        '9:00 - 10:30',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20,
-                        ),
+          Column(
+            children: <Widget>[
+              Card(
+                child: Row(children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.symmetric(
+                      vertical: 10,
+                      horizontal: 15,
+                    ),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 2,
                       ),
                     ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          'Lịch tập với PT Dũng',
-                          style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
-                        ),
-                        Text(
-                          'Tập cơ tay, cơ bụng',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold),
-                        ),
-                      ],
-                    )
-                  ]),
-                ),
-                Card(
-                  child: Row(children: <Widget>[
-                    Container(
-                      margin: EdgeInsets.symmetric(
-                        vertical: 10,
-                        horizontal: 15,
-                      ),
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.black,
-                          width: 2,
-                        ),
-                      ),
-                      padding: EdgeInsets.all(10),
-                      child: Text(
-                        '13:00 - 15:30',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20,
-                        ),
+                    padding: EdgeInsets.all(10),
+                    child: Text(
+                      '9:00 - 10:30',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
                       ),
                     ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          'Lịch tập với PT Hà',
-                          style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
-                        ),
-                        Text(
-                          'Tập cardio',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold),
-                        ),
-                      ],
-                    )
-                  ]),
-                ),
-              ],
-            ),
-          ],
-        ),
-      );
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'Lịch tập với PT Dũng',
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        'Tập cơ tay, cơ bụng',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  )
+                ]),
+              ),
+              Card(
+                child: Row(children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.symmetric(
+                      vertical: 10,
+                      horizontal: 15,
+                    ),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 2,
+                      ),
+                    ),
+                    padding: EdgeInsets.all(10),
+                    child: Text(
+                      '13:00 - 15:30',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'Lịch tập với PT Hà',
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        'Tập cardio',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  )
+                ]),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
   }
 }
