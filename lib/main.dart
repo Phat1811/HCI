@@ -8,6 +8,7 @@ import 'package:hci_layout/views/profile_page3.dart';
 import 'package:hci_layout/views/profile_page4.dart';
 import 'package:hci_layout/views/schedule.dart';
 import 'package:hci_layout/views/settings.dart';
+import 'package:hci_layout/views/joinlivestream.dart';
 
 void main() {
   runApp(MyApp());
@@ -61,7 +62,7 @@ class _HomePageState extends State<HomePage> {
   final List pages = [
     HomePageLocal(),
     HomeCalendarPage(),
-    LiveStreamPage(),
+    LiveStream(),
     Settings(),
   ];
   @override
@@ -99,11 +100,11 @@ class _HomePageState extends State<HomePage> {
               backgroundColor: Colors.blue,
             ),
           ],
-           onTap: (index){
-              setState(() {
-             _currentIndex=index;
-             });
-           },
+          onTap: (index) {
+            setState(() {
+              _currentIndex = index;
+            });
+          },
         ));
   }
 }
