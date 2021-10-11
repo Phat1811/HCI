@@ -53,8 +53,17 @@ class _HomeCalendarPageState extends State<BookPage> {
                     calendarStyle: CalendarStyle(
                       defaultTextStyle: TextStyle(color: Colors.white),
                       weekendTextStyle: TextStyle(color: Colors.white),
+                      outsideTextStyle: TextStyle(color: Colors.white),
+                      todayTextStyle: TextStyle(color: Colors.white),
+                      holidayTextStyle: TextStyle(color: Colors.white),
+                      disabledTextStyle: TextStyle(color: Colors.white),
+                      rangeEndTextStyle: TextStyle(color: Colors.white),
+                      withinRangeTextStyle: TextStyle(color: Colors.white),
+                      selectedTextStyle: TextStyle(color: Colors.white),
+                      rangeStartTextStyle: TextStyle(color: Colors.white),
                     ),
                     headerStyle: HeaderStyle(
+                
                       formatButtonTextStyle: TextStyle(color: Colors.white),
                       titleTextStyle: TextStyle(color: Colors.white),
                       leftChevronIcon: Icon(Icons.arrow_back_ios,
@@ -110,11 +119,14 @@ class _HomeCalendarPageState extends State<BookPage> {
                 //   ),
                 //   calendarController: _controller,
                 // ),
+                SizedBox(height: 10,),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
+                  
                     new Text(
-                      'Availible time:',
+                      'Thời gian luyện tập:',
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -129,9 +141,11 @@ class _HomeCalendarPageState extends State<BookPage> {
                     ),
                   ],
                 ),
+                SizedBox(height: 10,),
                 Column(
                   children: <Widget>[
                     Card(
+                      color: Color(0x222242),
                       child: Row(children: <Widget>[
                         Container(
                           margin: EdgeInsets.symmetric(
@@ -140,26 +154,35 @@ class _HomeCalendarPageState extends State<BookPage> {
                           ),
                           padding: EdgeInsets.all(20),
                         ),
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            Text(
-                              'Từ                                                             ',
-                              style: TextStyle(
-                                  fontSize: 16, fontWeight: FontWeight.normal),
+                        Column(
+                          children: [
+                            Row(
+                            
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                    
+                                  'Từ                                                             ',
+                                  style: TextStyle(
+                                      fontSize: 16, fontWeight: FontWeight.normal, color: Colors.white),
+                                ),
+                                Text(
+                                  '13:30',
+                                  style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                      color: Colors.green),
+                                ),
+                              ],
                             ),
-                            Text(
-                              '13:30',
-                              style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.normal,
-                                  color: Colors.green),
-                            ),
+                            
                           ],
-                        )
+                        ),
+                        
                       ]),
                     ),
                     Card(
+                      color: Color(0x222242),
                       child: Row(children: <Widget>[
                         Container(
                           margin: EdgeInsets.symmetric(
@@ -174,7 +197,7 @@ class _HomeCalendarPageState extends State<BookPage> {
                             Text(
                               'Đến                                                           ',
                               style: TextStyle(
-                                  fontSize: 16, fontWeight: FontWeight.normal),
+                                  fontSize: 16, fontWeight: FontWeight.normal,color: Colors.white),
                             ),
                             Text(
                               '15:30',
@@ -187,16 +210,21 @@ class _HomeCalendarPageState extends State<BookPage> {
                         )
                       ]),
                     ),
+                    SizedBox(height: 10,),
                     Card(
+                      color: Color(0xff222242),
                       child: Row(children: <Widget>[
                         Container(
+                          
+
                           margin: EdgeInsets.symmetric(
                             vertical: 15,
                             horizontal: 80,
                           ),
                           decoration: BoxDecoration(
+                            color: Colors.white,
                             border: Border.all(
-                              color: Colors.black,
+                              color: Colors.green,
                               width: 2,
                             ),
                           ),

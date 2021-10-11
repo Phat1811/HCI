@@ -219,7 +219,7 @@ class ProfilePage3 extends StatelessWidget {
                         SizedBox(
                           width: 10,
                         ),
-                        Text("Biography",
+                        Text("Tiểu Sử",
                             style: TextStyle(
                                 fontSize: 30,
                                 color: Colors.greenAccent,

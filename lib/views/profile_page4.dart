@@ -208,7 +208,7 @@ class ProfilePage4 extends StatelessWidget {
                         SizedBox(
                           width: 10,
                         ),
-                        Text("Biography",
+                        Text("Tiểu Sử",
                             style: TextStyle(
                                 fontSize: 30,
                                 color: Colors.greenAccent,
@@ -221,7 +221,7 @@ class ProfilePage4 extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
                       child: Text(
-                    "Lifestyle. Energy. Results. Train like an Athlete! Expert on Weight Lifting & CrossFit, Strong on Core Training & Nutritionist. Health!",
+                    "Bạn muốn tăng giảm cân, tăng cơ, giảm căng thẳng? tôi là một HLV có 5 năm kinh nghiệm, sẵn sàng giúp bạn đạt điều đó. Ngoài vui vẻ, hòa đồng, tôi còn là một người kỷ luật. Bạn có thể yên tâm khi lựa chọn",
                     style: TextStyle(fontSize: 20, color: Colors.white),
                   )),
                 )

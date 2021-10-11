@@ -16,141 +16,173 @@ class _HomeCalendarPageState extends State<HomeCalendarPage> {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          TableCalendar(
-            focusedDay: DateTime.now(),
-            firstDay: DateTime(1990),
-            lastDay: DateTime(2050),
-          ),
-          /*TableCalendar(
-              initialCalendarFormat: CalendarFormat.month,
-              calendarStyle: CalendarStyle(
-                  todayColor: Colors.red[400],
-                  selectedColor: Theme.of(context).primaryColor,
-                  todayStyle: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 22.0,
-                      color: Colors.white)),
-              headerStyle: HeaderStyle(
-                centerHeaderTitle: true,
-                formatButtonDecoration: BoxDecoration(
-                  color: Colors.brown,
-                  borderRadius: BorderRadius.circular(22.0),
+    return Container(
+      width: double.infinity,
+        height: double.infinity,
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("assets/backgrond.png"), fit: BoxFit.cover)),
+      child: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            TableCalendar(
+                    calendarStyle: CalendarStyle(
+                      defaultTextStyle: TextStyle(color: Colors.white),
+                      weekendTextStyle: TextStyle(color: Colors.white),
+                      outsideTextStyle: TextStyle(color: Colors.white),
+                      todayTextStyle: TextStyle(color: Colors.white),
+                      holidayTextStyle: TextStyle(color: Colors.white),
+                      disabledTextStyle: TextStyle(color: Colors.white),
+                      rangeEndTextStyle: TextStyle(color: Colors.white),
+                      withinRangeTextStyle: TextStyle(color: Colors.white),
+                      selectedTextStyle: TextStyle(color: Colors.white),
+                      rangeStartTextStyle: TextStyle(color: Colors.white),
+                    ),
+                    headerStyle: HeaderStyle(
+                
+                      formatButtonTextStyle: TextStyle(color: Colors.white),
+                      titleTextStyle: TextStyle(color: Colors.white),
+                      leftChevronIcon: Icon(Icons.arrow_back_ios,
+                          size: 15, color: Colors.white),
+                      rightChevronIcon: Icon(Icons.arrow_forward_ios,
+                          size: 15, color: Colors.white),
+                    ),
+                    focusedDay: DateTime.now(),
+                    firstDay: DateTime(1990),
+                    lastDay: DateTime(2050),
+                  ),
+            /*TableCalendar(
+                initialCalendarFormat: CalendarFormat.month,
+                calendarStyle: CalendarStyle(
+                    todayColor: Colors.red[400],
+                    selectedColor: Theme.of(context).primaryColor,
+                    todayStyle: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 22.0,
+                        color: Colors.white)),
+                headerStyle: HeaderStyle(
+                  centerHeaderTitle: true,
+                  formatButtonDecoration: BoxDecoration(
+                    color: Colors.brown,
+                    borderRadius: BorderRadius.circular(22.0),
+                  ),
+                  formatButtonTextStyle: TextStyle(color: Colors.white),
+                  formatButtonShowsNext: false,
                 ),
-                formatButtonTextStyle: TextStyle(color: Colors.white),
-                formatButtonShowsNext: false,
-              ),
-              startingDayOfWeek: StartingDayOfWeek.monday,
-              builders: CalendarBuilders(
-                selectedDayBuilder: (context, date, events) => Container(
-                    margin: const EdgeInsets.all(5.0),
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                        color: Theme.of(context).primaryColor,
-                        borderRadius: BorderRadius.circular(8.0)),
-                    child: Text(
-                      date.day.toString(),
-                      style: TextStyle(color: Colors.white),
-                    )),
-                todayDayBuilder: (context, date, events) => Container(
-                    margin: const EdgeInsets.all(5.0),
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                        color: Colors.red[400],
-                        borderRadius: BorderRadius.circular(8.0)),
-                    child: Text(
-                      date.day.toString(),
-                      style: TextStyle(color: Colors.white),
-                    )),
-              ),
-              calendarController: _controller,
-            ),*/
-          Column(
-            children: <Widget>[
-              Card(
-                child: Row(children: <Widget>[
-                  Container(
-                    margin: EdgeInsets.symmetric(
-                      vertical: 10,
-                      horizontal: 15,
-                    ),
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.black,
-                        width: 2,
+                startingDayOfWeek: StartingDayOfWeek.monday,
+                builders: CalendarBuilders(
+                  selectedDayBuilder: (context, date, events) => Container(
+                      margin: const EdgeInsets.all(5.0),
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).primaryColor,
+                          borderRadius: BorderRadius.circular(8.0)),
+                      child: Text(
+                        date.day.toString(),
+                        style: TextStyle(color: Colors.white),
+                      )),
+                  todayDayBuilder: (context, date, events) => Container(
+                      margin: const EdgeInsets.all(5.0),
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                          color: Colors.red[400],
+                          borderRadius: BorderRadius.circular(8.0)),
+                      child: Text(
+                        date.day.toString(),
+                        style: TextStyle(color: Colors.white),
+                      )),
+                ),
+                calendarController: _controller,
+              ),*/
+            Column(
+              children: <Widget>[
+                Card(
+                  color: Color(0xff222242),
+                  child: Row(children: <Widget>[
+                    Container(
+                      margin: EdgeInsets.symmetric(
+                        vertical: 10,
+                        horizontal: 15,
                       ),
-                    ),
-                    padding: EdgeInsets.all(10),
-                    child: Text(
-                      '9:00 - 10:30',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.green,
+                          width: 2,
+                        ),
                       ),
-                    ),
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        'Lịch tập với PT Dũng',
+                      padding: EdgeInsets.all(10),
+                      child: Text(
+                        '9:00 - 10:30',
                         style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.bold),
-                      ),
-                      Text(
-                        'Tập cơ tay, cơ bụng',
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold),
-                      ),
-                    ],
-                  )
-                ]),
-              ),
-              Card(
-                child: Row(children: <Widget>[
-                  Container(
-                    margin: EdgeInsets.symmetric(
-                      vertical: 10,
-                      horizontal: 15,
-                    ),
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.black,
-                        width: 2,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                          color: Colors.white
+                        ),
                       ),
                     ),
-                    padding: EdgeInsets.all(10),
-                    child: Text(
-                      '13:00 - 15:30',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          'Lịch tập với PT Dũng',
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                        ),
+                        Text(
+                          'Tập cơ tay, cơ bụng',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
+                        ),
+                      ],
+                    )
+                  ]),
+                ),
+                Card(
+                  color: Color(0xff222242),
+                  child: Row(children: <Widget>[
+                    Container(
+                      margin: EdgeInsets.symmetric(
+                        vertical: 10,
+                        horizontal: 15,
+                      ),
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.green,
+                          width: 2,
+                        ),
+                      ),
+                      padding: EdgeInsets.all(10),
+                      child: Text(
+                        '13:00 - 15:30',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                          color: Colors.white
+                        ),
                       ),
                     ),
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        'Lịch tập với PT Hà',
-                        style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.bold),
-                      ),
-                      Text(
-                        'Tập cardio',
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold),
-                      ),
-                    ],
-                  )
-                ]),
-              ),
-            ],
-          ),
-        ],
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          'Lịch tập với PT Hà',
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                        ),
+                        Text(
+                          'Tập cardio',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
+                        ),
+                      ],
+                    )
+                  ]),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

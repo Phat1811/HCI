@@ -165,16 +165,21 @@ class ProfilePage1 extends StatelessWidget {
                   ),
                 ),
                 Container(
+                  width: 120,
+                  height: 45,
                   child: Padding(
                     padding: const EdgeInsets.only(top: 5),
                     child: RaisedButton(
+
+                      
+                      color: Colors.greenAccent[700],
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => BookPage()));
                       },
-                      child: Text("Đặt lịch"),
+                      child: Text("Đặt lịch", style: TextStyle(color: Colors.white, fontWeight: FontWeight.w900, fontSize: 16),),
                     ),
                   ),
                 ),
@@ -207,7 +212,7 @@ class ProfilePage1 extends StatelessWidget {
                         SizedBox(
                           width: 10,
                         ),
-                        Text("Biography",
+                        Text("Tiểu Sử",
                             style: TextStyle(
                                 fontSize: 30,
                                 color: Colors.greenAccent,
@@ -220,7 +225,7 @@ class ProfilePage1 extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
                       child: Text(
-                    "Lifestyle. Energy. Results. Train like an Athlete! Expert on Weight Lifting & CrossFit, Strong on Core Training & Nutritionist. Health!",
+                    "Minh tên là Đức, hiện tại mình là PT#FREELANCE , Và minh có biết về stretch ( căng giãn cơ ) , xin chào tất cả các A/chi và các bạn rất vui khi được hợp tác #Top 15 Menphysis Nha Trang #Model Fitness",
                     style: TextStyle(fontSize: 20, color: Colors.white),
                   )),
                 )
