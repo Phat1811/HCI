@@ -15,7 +15,7 @@ class _LiveStreamPageState extends State<LiveStreamPage> {
       body: Container(
         decoration: BoxDecoration(
             image: DecorationImage(
-          image: AssetImage('assets/trainer_livestream.png'),
+          image: AssetImage('assets/trainer_livestream.jpg'),
           fit: BoxFit.cover,
         )),
         child: Column(
