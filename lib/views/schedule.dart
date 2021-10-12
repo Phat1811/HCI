@@ -18,40 +18,39 @@ class _HomeCalendarPageState extends State<HomeCalendarPage> {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-        height: double.infinity,
-        decoration: BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage("assets/backgrond.png"), fit: BoxFit.cover)),
+      height: double.infinity,
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage("assets/backgrond.png"), fit: BoxFit.cover)),
       child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             TableCalendar(
-                    calendarStyle: CalendarStyle(
-                      defaultTextStyle: TextStyle(color: Colors.white),
-                      weekendTextStyle: TextStyle(color: Colors.white),
-                      outsideTextStyle: TextStyle(color: Colors.white),
-                      todayTextStyle: TextStyle(color: Colors.white),
-                      holidayTextStyle: TextStyle(color: Colors.white),
-                      disabledTextStyle: TextStyle(color: Colors.white),
-                      rangeEndTextStyle: TextStyle(color: Colors.white),
-                      withinRangeTextStyle: TextStyle(color: Colors.white),
-                      selectedTextStyle: TextStyle(color: Colors.white),
-                      rangeStartTextStyle: TextStyle(color: Colors.white),
-                    ),
-                    headerStyle: HeaderStyle(
-                
-                      formatButtonTextStyle: TextStyle(color: Colors.white),
-                      titleTextStyle: TextStyle(color: Colors.white),
-                      leftChevronIcon: Icon(Icons.arrow_back_ios,
-                          size: 15, color: Colors.white),
-                      rightChevronIcon: Icon(Icons.arrow_forward_ios,
-                          size: 15, color: Colors.white),
-                    ),
-                    focusedDay: DateTime.now(),
-                    firstDay: DateTime(1990),
-                    lastDay: DateTime(2050),
-                  ),
+              calendarStyle: CalendarStyle(
+                defaultTextStyle: TextStyle(color: Colors.white),
+                weekendTextStyle: TextStyle(color: Colors.white),
+                outsideTextStyle: TextStyle(color: Colors.white),
+                todayTextStyle: TextStyle(color: Colors.white),
+                holidayTextStyle: TextStyle(color: Colors.white),
+                disabledTextStyle: TextStyle(color: Colors.white),
+                rangeEndTextStyle: TextStyle(color: Colors.white),
+                withinRangeTextStyle: TextStyle(color: Colors.white),
+                selectedTextStyle: TextStyle(color: Colors.white),
+                rangeStartTextStyle: TextStyle(color: Colors.white),
+              ),
+              headerStyle: HeaderStyle(
+                formatButtonTextStyle: TextStyle(color: Colors.white),
+                titleTextStyle: TextStyle(color: Colors.white),
+                leftChevronIcon:
+                    Icon(Icons.arrow_back_ios, size: 15, color: Colors.white),
+                rightChevronIcon: Icon(Icons.arrow_forward_ios,
+                    size: 15, color: Colors.white),
+              ),
+              focusedDay: DateTime.now(),
+              firstDay: DateTime(1990),
+              lastDay: DateTime(2050),
+            ),
             /*TableCalendar(
                 initialCalendarFormat: CalendarFormat.month,
                 calendarStyle: CalendarStyle(
@@ -115,10 +114,9 @@ class _HomeCalendarPageState extends State<HomeCalendarPage> {
                       child: Text(
                         '9:00 - 10:30',
                         style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20,
-                          color: Colors.white
-                        ),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                            color: Colors.white),
                       ),
                     ),
                     Column(
@@ -127,12 +125,16 @@ class _HomeCalendarPageState extends State<HomeCalendarPage> {
                         Text(
                           'Lịch tập với PT Dũng',
                           style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
                         ),
                         Text(
-                          'Tập cơ tay, cơ bụng',
+                          'Bài tập: cơ tay - cardio',
                           style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
                         ),
                       ],
                     )
@@ -154,26 +156,29 @@ class _HomeCalendarPageState extends State<HomeCalendarPage> {
                       ),
                       padding: EdgeInsets.all(10),
                       child: Text(
-                        '13:00 - 15:30',
+                        '13:30 - 15:30',
                         style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20,
-                          color: Colors.white
-                        ),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                            color: Colors.white),
                       ),
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          'Lịch tập với PT Hà',
+                          'Lịch tập với PT Đức',
                           style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
                         ),
                         Text(
-                          'Tập cardio',
+                          'Bài tập: đùi - bụng',
                           style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
                         ),
                       ],
                     )

@@ -11,7 +11,7 @@ class _LiveStreamPageState extends State<LiveStreamPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("thay doi")),
+      appBar: AppBar(title: Text("Phòng tập : Đức Đặng ( PT-001)  ")),
       body: Container(
         decoration: BoxDecoration(
             image: DecorationImage(

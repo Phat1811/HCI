@@ -16,7 +16,7 @@ class LiveStream extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Color(0xff222242),
         title: Text(
-          'Trang tập luyện',
+          'Kết nối phòng tập',
           style: TextStyle(color: Colors.white),
         ),
         actions: <Widget>[
@@ -40,7 +40,6 @@ class LiveStream extends StatelessWidget {
                 width: 350,
                 height: 400,
                 color: Color(0xff222242),
-                
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -78,17 +77,17 @@ class LiveStream extends StatelessWidget {
                               "Ngày: 12/10/2021",
                               style: TextStyle(
                                 fontSize: 20,
-                                color: Colors.green,
+                                color: Colors.white,
                               ),
                             ),
                             SizedBox(
                               height: 10,
                             ),
                             Text(
-                              "Thời gian tập: 15h00 -> 16h30",
+                              "Thời gian tập: 13:30 -> 15:30",
                               style: TextStyle(
                                 fontSize: 20,
-                                color: Colors.green,
+                                color: Colors.white,
                               ),
                             ),
                             SizedBox(
@@ -98,7 +97,7 @@ class LiveStream extends StatelessWidget {
                               "Nội dung tập: đùi, cardio",
                               style: TextStyle(
                                 fontSize: 20,
-                                color: Colors.green,
+                                color: Colors.white,
                               ),
                             ),
                           ],
@@ -113,7 +112,7 @@ class LiveStream extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: SizedBox(
-                          width: 120,
+                          width: 100,
                           height: 56,
                           child: ElevatedButton(
                             style: (ButtonStyle(
@@ -126,7 +125,10 @@ class LiveStream extends StatelessWidget {
                                   MaterialPageRoute(
                                       builder: (context) => LiveStreamPage()));
                             },
-                            child: Text('Tham gia LiveStream', style: TextStyle(color: Colors.white),),
+                            child: Text(
+                              'Tham gia phòng tập',
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                         ),
                       ),

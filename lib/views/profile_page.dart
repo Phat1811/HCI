@@ -116,7 +116,7 @@ class ProfilePage1 extends StatelessWidget {
                                 style: TextStyle(fontSize: 15),
                               ),
                               Text(
-                                "57 Năm",
+                                "5 Năm",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               )
@@ -164,39 +164,70 @@ class ProfilePage1 extends StatelessWidget {
                     ),
                   ),
                 ),
-                Container(
-                  width: 120,
-                  height: 45,
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 5),
-                    child: RaisedButton(
-
-                      
-                      color: Colors.greenAccent[700],
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => BookPage()));
-                      },
-                      child: Text("Đặt lịch", style: TextStyle(color: Colors.white, fontWeight: FontWeight.w900, fontSize: 16),),
-                    ),
-                  ),
-                ),
+                // Container(
+                //   width: 120,
+                //   height: 45,
+                //   child: Padding(
+                //     padding: const EdgeInsets.only(top: 5),
+                //     child: RaisedButton(
+                //       color: Colors.greenAccent[700],
+                //       onPressed: () {
+                //         Navigator.push(
+                //             context,
+                //             MaterialPageRoute(
+                //                 builder: (context) => BookPage()));
+                //       },
+                //       child: Text(
+                //         "Đặt lịch",
+                //         style: TextStyle(
+                //             color: Colors.white,
+                //             fontWeight: FontWeight.w900,
+                //             fontSize: 16),
+                //       ),
+                //     ),
+                //   ),
+                // ),
                 Padding(
                     padding: const EdgeInsets.only(left: 10, top: 5),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                    child: Column(
                       children: [
-                        Chip(
-                          label: const Text('ImproveGeneralHealth'),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Chip(
+                              label: const Text('Cải thiện về sức khoẻ'),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Chip(
+                              label: const Text('Tăng cân'),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Chip(
+                              label: const Text('Tăng cơ bắp'),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                          ],
                         ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Chip(
-                          label: const Text('WeightGain'),
-                        )
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.start,
+                        //   children: [
+                        //     Chip(
+                        //       label: const Text('FatLoss'),
+                        //     ),
+                        //     SizedBox(
+                        //       width: 10,
+                        //     ),
+                        //     Chip(
+                        //       label: const Text('Stretching'),
+                        //     ),
+                        //   ],
+                        // ),
                       ],
                     )),
                 Padding(
@@ -225,10 +256,58 @@ class ProfilePage1 extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
                       child: Text(
-                    "Minh tên là Đức, hiện tại mình là PT#FREELANCE , Và minh có biết về stretch ( căng giãn cơ ) , xin chào tất cả các A/chi và các bạn rất vui khi được hợp tác #Top 15 Menphysis Nha Trang #Model Fitness",
+                    "Minh tên là Đức,hiện tại mình đang là PT cho LEEPS,với kinh nghiệm là một người đã từng giúp nhiều bạn cải thiện về dáng vóc,sức khỏe một cách nhanh chóng.Mình tự tin có thể giúp các bạn thay đổi thành công về ngoại hình của mình.#Top 15 Menphysis Nha Trang #Model Fitness",
                     style: TextStyle(fontSize: 20, color: Colors.white),
                   )),
-                )
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 5),
+                        child: new SizedBox(
+                          width: 150.0,
+                          height: 50.0,
+                          child: RaisedButton(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => BookPage()));
+                            },
+                            child: Text(
+                              "Theo dõi",
+                              style: TextStyle(color: Colors.black),
+                            ),
+                            color: Colors.greenAccent,
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 5),
+                        child: new SizedBox(
+                          width: 150.0,
+                          height: 50.0,
+                          child: RaisedButton(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => BookPage()));
+                            },
+                            child: Text("Đặt lịch"),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ],

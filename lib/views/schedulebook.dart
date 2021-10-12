@@ -63,7 +63,6 @@ class _HomeCalendarPageState extends State<BookPage> {
                       rangeStartTextStyle: TextStyle(color: Colors.white),
                     ),
                     headerStyle: HeaderStyle(
-                
                       formatButtonTextStyle: TextStyle(color: Colors.white),
                       titleTextStyle: TextStyle(color: Colors.white),
                       leftChevronIcon: Icon(Icons.arrow_back_ios,
@@ -119,14 +118,14 @@ class _HomeCalendarPageState extends State<BookPage> {
                 //   ),
                 //   calendarController: _controller,
                 // ),
-                SizedBox(height: 10,),
+                SizedBox(
+                  height: 10,
+                ),
                 Row(
-                  
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
-                  
                     new Text(
-                      'Thời gian luyện tập:',
+                      'Khung giờ thích hợp:',
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -141,7 +140,9 @@ class _HomeCalendarPageState extends State<BookPage> {
                     ),
                   ],
                 ),
-                SizedBox(height: 10,),
+                SizedBox(
+                  height: 10,
+                ),
                 Column(
                   children: <Widget>[
                     Card(
@@ -157,14 +158,14 @@ class _HomeCalendarPageState extends State<BookPage> {
                         Column(
                           children: [
                             Row(
-                            
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Text(
-                    
                                   'Từ                                                             ',
                                   style: TextStyle(
-                                      fontSize: 16, fontWeight: FontWeight.normal, color: Colors.white),
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                      color: Colors.white),
                                 ),
                                 Text(
                                   '13:30',
@@ -175,10 +176,8 @@ class _HomeCalendarPageState extends State<BookPage> {
                                 ),
                               ],
                             ),
-                            
                           ],
                         ),
-                        
                       ]),
                     ),
                     Card(
@@ -197,7 +196,9 @@ class _HomeCalendarPageState extends State<BookPage> {
                             Text(
                               'Đến                                                           ',
                               style: TextStyle(
-                                  fontSize: 16, fontWeight: FontWeight.normal,color: Colors.white),
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.normal,
+                                  color: Colors.white),
                             ),
                             Text(
                               '15:30',
@@ -210,13 +211,13 @@ class _HomeCalendarPageState extends State<BookPage> {
                         )
                       ]),
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(
+                      height: 10,
+                    ),
                     Card(
                       color: Color(0xff222242),
                       child: Row(children: <Widget>[
                         Container(
-                          
-
                           margin: EdgeInsets.symmetric(
                             vertical: 15,
                             horizontal: 80,
