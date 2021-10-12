@@ -56,7 +56,7 @@ class ProfilePage2 extends StatelessWidget {
                       fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  "@shophieDo",
+                  "@dohang",
                   style: TextStyle(fontSize: 20, color: Colors.grey),
                 ),
                 Container(
@@ -115,7 +115,7 @@ class ProfilePage2 extends StatelessWidget {
                                 style: TextStyle(fontSize: 15),
                               ),
                               Text(
-                                "4 Năm",
+                                "5 Năm",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               )
@@ -132,7 +132,7 @@ class ProfilePage2 extends StatelessWidget {
                                 style: TextStyle(fontSize: 15),
                               ),
                               Text(
-                                "14210",
+                                "4875",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               )
@@ -163,39 +163,70 @@ class ProfilePage2 extends StatelessWidget {
                     ),
                   ),
                 ),
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 5),
-                    child: RaisedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => BookPage()));
-                      },
-                      child: Text("Đặt lịch"),
-                    ),
-                  ),
-                ),
+                // Container(
+                //   width: 120,
+                //   height: 45,
+                //   child: Padding(
+                //     padding: const EdgeInsets.only(top: 5),
+                //     child: RaisedButton(
+                //       color: Colors.greenAccent[700],
+                //       onPressed: () {
+                //         Navigator.push(
+                //             context,
+                //             MaterialPageRoute(
+                //                 builder: (context) => BookPage()));
+                //       },
+                //       child: Text(
+                //         "Đặt lịch",
+                //         style: TextStyle(
+                //             color: Colors.white,
+                //             fontWeight: FontWeight.w900,
+                //             fontSize: 16),
+                //       ),
+                //     ),
+                //   ),
+                // ),
                 Padding(
                     padding: const EdgeInsets.only(left: 10, top: 5),
-                    child: ListView(
+                    child: Column(
                       children: [
-                        Chip(
-                          label: const Text('ImproveGeneralHealth'),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Chip(
+                              label: const Text('Cải thiện về sức khoẻ'),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Chip(
+                              label: const Text('Tăng cân'),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Chip(
+                              label: const Text('Tăng cơ bắp'),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                          ],
                         ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Chip(
-                          label: const Text('WeightGain'),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Chip(
-                          label: const Text('FatLoss'),
-                        ),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.start,
+                        //   children: [
+                        //     Chip(
+                        //       label: const Text('FatLoss'),
+                        //     ),
+                        //     SizedBox(
+                        //       width: 10,
+                        //     ),
+                        //     Chip(
+                        //       label: const Text('Stretching'),
+                        //     ),
+                        //   ],
+                        // ),
                       ],
                     )),
                 Padding(
@@ -211,7 +242,7 @@ class ProfilePage2 extends StatelessWidget {
                         SizedBox(
                           width: 10,
                         ),
-                        Text("Biography",
+                        Text("Tiểu Sử",
                             style: TextStyle(
                                 fontSize: 30,
                                 color: Colors.greenAccent,
@@ -224,10 +255,58 @@ class ProfilePage2 extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
                       child: Text(
-                    "Lifestyle. Energy. Results. Train like an Athlete! Expert on Weight Lifting & CrossFit, Strong on Core Training & Nutritionist. Health!",
+                    "MÌnh tên là Hằng, với kinh nghiệm làm việc tại Leep mình hiện tại có thể hỗ trợ các bạn giảm cân và cải thiện sức khỏe ",
                     style: TextStyle(fontSize: 20, color: Colors.white),
                   )),
-                )
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 5),
+                        child: new SizedBox(
+                          width: 150.0,
+                          height: 50.0,
+                          child: RaisedButton(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => BookPage()));
+                            },
+                            child: Text(
+                              "Theo dõi",
+                              style: TextStyle(color: Colors.black),
+                            ),
+                            color: Colors.greenAccent,
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 5),
+                        child: new SizedBox(
+                          width: 150.0,
+                          height: 50.0,
+                          child: RaisedButton(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => BookPage()));
+                            },
+                            child: Text("Đặt lịch"),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ],

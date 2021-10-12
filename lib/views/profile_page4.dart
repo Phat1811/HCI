@@ -134,7 +134,7 @@ class ProfilePage4 extends StatelessWidget {
                                 style: TextStyle(fontSize: 15),
                               ),
                               Text(
-                                "71024",
+                                "7102",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               )
@@ -165,33 +165,19 @@ class ProfilePage4 extends StatelessWidget {
                     ),
                   ),
                 ),
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 5),
-                    child: RaisedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => ProfilePage4()));
-                      },
-                      child: Text("Đặt lịch"),
-                    ),
-                  ),
-                ),
                 Padding(
                     padding: const EdgeInsets.only(left: 10, top: 5),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Chip(
-                          label: const Text('ImproveGeneralHealth'),
+                          label: const Text('Cải thiện về sức khoẻ'),
                         ),
                         SizedBox(
                           width: 10,
                         ),
                         Chip(
-                          label: const Text('WeightGain'),
+                          label: const Text('Tăng cân'),
                         )
                       ],
                     )),
@@ -224,7 +210,55 @@ class ProfilePage4 extends StatelessWidget {
                     "Bạn muốn tăng giảm cân, tăng cơ, giảm căng thẳng? tôi là một HLV có 5 năm kinh nghiệm, sẵn sàng giúp bạn đạt điều đó. Ngoài vui vẻ, hòa đồng, tôi còn là một người kỷ luật. Bạn có thể yên tâm khi lựa chọn",
                     style: TextStyle(fontSize: 20, color: Colors.white),
                   )),
-                )
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 5),
+                        child: new SizedBox(
+                          width: 150.0,
+                          height: 50.0,
+                          child: RaisedButton(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => BookPage()));
+                            },
+                            child: Text(
+                              "Theo dõi",
+                              style: TextStyle(color: Colors.black),
+                            ),
+                            color: Colors.greenAccent,
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 5),
+                        child: new SizedBox(
+                          width: 150.0,
+                          height: 50.0,
+                          child: RaisedButton(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => BookPage()));
+                            },
+                            child: Text("Đặt lịch"),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ],
