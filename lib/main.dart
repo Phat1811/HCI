@@ -86,12 +86,12 @@ class _HomePageState extends State<HomePage> {
               icon: Icon(
                 Icons.calendar_today,
               ),
-              label: 'Lịch',
+              label: 'Lịch tập',
               backgroundColor: Colors.red,
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.chat),
-              label: 'Trò chuyện',
+              label: 'Tập luyện',
               backgroundColor: Colors.blue,
             ),
             BottomNavigationBarItem(
