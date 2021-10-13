@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hci_layout/main.dart';
 import './schedulebook.dart';
 
 class ProfilePage1 extends StatelessWidget {
@@ -133,7 +132,11 @@ class ProfilePage1 extends StatelessWidget {
                                 style: TextStyle(fontSize: 15),
                               ),
                               Text(
+<<<<<<< HEAD
                                 "902",
+=======
+                                "7902",
+>>>>>>> 5c72add6103d36f8aab722dffcd2652311e8caa3
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               )

@@ -132,7 +132,11 @@ class ProfilePage2 extends StatelessWidget {
                                 style: TextStyle(fontSize: 15),
                               ),
                               Text(
+<<<<<<< HEAD
                                 "1875",
+=======
+                                "4875",
+>>>>>>> 5c72add6103d36f8aab722dffcd2652311e8caa3
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               )
@@ -262,7 +266,11 @@ class ProfilePage2 extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+<<<<<<< HEAD
                     /*Container(
+=======
+                    Container(
+>>>>>>> 5c72add6103d36f8aab722dffcd2652311e8caa3
                       child: Padding(
                         padding: const EdgeInsets.only(top: 5),
                         child: new SizedBox(
@@ -283,7 +291,11 @@ class ProfilePage2 extends StatelessWidget {
                           ),
                         ),
                       ),
+<<<<<<< HEAD
                     ),*/
+=======
+                    ),
+>>>>>>> 5c72add6103d36f8aab722dffcd2652311e8caa3
                     SizedBox(
                       width: 10,
                     ),

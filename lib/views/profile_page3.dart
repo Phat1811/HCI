@@ -132,7 +132,7 @@ class ProfilePage3 extends StatelessWidget {
                                 style: TextStyle(fontSize: 15),
                               ),
                               Text(
-                                "68814",
+                                "6814",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               )
@@ -171,19 +171,19 @@ class ProfilePage3 extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Chip(
-                              label: const Text('ImproveGeneralHealth'),
+                              label: const Text('Cải thiện về sức khoẻ'),
                             ),
                             SizedBox(
                               width: 10,
                             ),
                             Chip(
-                              label: const Text('WeightGain'),
+                              label: const Text('Giảm cân'),
                             ),
                             SizedBox(
                               width: 10,
                             ),
                             Chip(
-                              label: const Text('MuscleGain'),
+                              label: const Text('Tăng cơ'),
                             ),
                             SizedBox(
                               width: 10,
@@ -194,13 +194,13 @@ class ProfilePage3 extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Chip(
-                              label: const Text('FatLoss'),
+                              label: const Text('Giảm mỡ'),
                             ),
                             SizedBox(
                               width: 10,
                             ),
                             Chip(
-                              label: const Text('Stretching'),
+                              label: const Text('Bài tập giãn cơ'),
                             ),
                           ],
                         ),

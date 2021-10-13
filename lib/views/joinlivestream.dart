@@ -39,6 +39,7 @@ class LiveStream extends StatelessWidget {
                   image: AssetImage("assets/backgrond.png"),
                   fit: BoxFit.cover)),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
                 width: 350,
@@ -122,11 +123,11 @@ class LiveStream extends StatelessWidget {
                       height: 15,
                     ),
                     Align(
-                      alignment: Alignment.bottomRight,
+                      alignment: Alignment.center,
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: SizedBox(
-                          width: 100,
+                          width: 200,
                           height: 56,
                           child: ElevatedButton(
                             style: (ButtonStyle(
