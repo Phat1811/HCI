@@ -87,11 +87,11 @@ class ProfilePage1 extends StatelessWidget {
                           size: 20,
                         ),
                         Icon(
-                          Icons.star,
-                          color: Colors.grey,
+                          Icons.star_half,
+                          color: Colors.yellow,
                           size: 20,
                         ),
-                        const Text('(4)',
+                        const Text('(4.5)',
                             style: TextStyle(color: Colors.white)),
                       ],
                     ),
@@ -129,11 +129,11 @@ class ProfilePage1 extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Theo dõi",
+                                "Số người đăng ký",
                                 style: TextStyle(fontSize: 15),
                               ),
                               Text(
-                                "75902",
+                                "902",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               )
@@ -147,15 +147,15 @@ class ProfilePage1 extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Lịch tập",
+                                "Giá tiền",
                                 style: TextStyle(fontSize: 15),
                               ),
                               Text(
-                                "Còn trống",
+                                "100 coins/h",
                                 style: TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.w600,
-                                    color: Colors.green),
+                                    color: Colors.black),
                               )
                             ],
                           ),
@@ -201,7 +201,7 @@ class ProfilePage1 extends StatelessWidget {
                               width: 10,
                             ),
                             Chip(
-                              label: const Text('Tăng cân'),
+                              label: const Text('Giảm mỡ'),
                             ),
                             SizedBox(
                               width: 10,
@@ -243,7 +243,7 @@ class ProfilePage1 extends StatelessWidget {
                         SizedBox(
                           width: 10,
                         ),
-                        Text("Tiểu Sử",
+                        Text("Giới thiệu",
                             style: TextStyle(
                                 fontSize: 30,
                                 color: Colors.greenAccent,
@@ -264,7 +264,7 @@ class ProfilePage1 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      child: Padding(
+                      /*child: Padding(
                         padding: const EdgeInsets.only(top: 5),
                         child: new SizedBox(
                           width: 150.0,
@@ -283,7 +283,7 @@ class ProfilePage1 extends StatelessWidget {
                             color: Colors.greenAccent,
                           ),
                         ),
-                      ),
+                      ),*/
                     ),
                     SizedBox(
                       width: 10,

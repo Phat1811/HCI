@@ -63,6 +63,22 @@ class _SettingsState extends State<Settings> {
           ),
           ListTile(
             leading: Icon(
+              Icons.account_balance_wallet_outlined,
+              color: Colors.white,
+            ),
+            title: Text(
+              'Ví',
+              style: TextStyle(color: Colors.white),
+            ),
+            onTap: () => {},
+            tileColor: Colors.white,
+          ),
+          Divider(
+            height: 1,
+            color: Colors.white10,
+          ),
+          ListTile(
+            leading: Icon(
               Icons.history,
               color: Colors.white,
             ),

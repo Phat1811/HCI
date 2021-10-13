@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hci_layout/main.dart';
 //import './transaction.dart';
 import 'package:table_calendar/table_calendar.dart';
 //import 'package:test/transaction.dart';
@@ -121,7 +122,7 @@ class _HomeCalendarPageState extends State<BookPage> {
                 SizedBox(
                   height: 10,
                 ),
-                Row(
+                /*Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
                     new Text(
@@ -139,7 +140,7 @@ class _HomeCalendarPageState extends State<BookPage> {
                           color: Colors.white),
                     ),
                   ],
-                ),
+                ),*/
                 SizedBox(
                   height: 10,
                 ),
@@ -160,19 +161,26 @@ class _HomeCalendarPageState extends State<BookPage> {
                             Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
-                                Text(
+                                /*Text(
                                   'Từ                                                             ',
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.normal,
                                       color: Colors.white),
+                                ),*/
+                                Icon(
+                                  Icons.check_box_outline_blank_rounded,
+                                  color: Colors.green,
+                                ),
+                                SizedBox(
+                                  width: 100,
                                 ),
                                 Text(
-                                  '13:30',
+                                  '13:00 - 2:30',
                                   style: TextStyle(
-                                      fontSize: 16,
+                                      fontSize: 20,
                                       fontWeight: FontWeight.normal,
-                                      color: Colors.green),
+                                      color: Colors.white),
                                 ),
                               ],
                             ),
@@ -193,19 +201,26 @@ class _HomeCalendarPageState extends State<BookPage> {
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Text(
+                            /*Text(
                               'Đến                                                           ',
                               style: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.normal,
                                   color: Colors.white),
+                            ),*/
+                            Icon(
+                              Icons.check_box_outlined,
+                              color: Colors.green,
+                            ),
+                            SizedBox(
+                              width: 100,
                             ),
                             Text(
-                              '15:30',
+                              '16:30 - 5:30',
                               style: TextStyle(
-                                  fontSize: 16,
+                                  fontSize: 20,
                                   fontWeight: FontWeight.normal,
-                                  color: Colors.green),
+                                  color: Colors.white),
                             ),
                           ],
                         )
@@ -229,9 +244,11 @@ class _HomeCalendarPageState extends State<BookPage> {
                               width: 2,
                             ),
                           ),
-                          padding: EdgeInsets.all(8),
+                          padding: EdgeInsets.symmetric(vertical: 15,
+                            horizontal: 20,),
+                          
                           child: Text(
-                            '100 Coin',
+                            'Tổng cộng: 100 Coin',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 20,
@@ -239,8 +256,15 @@ class _HomeCalendarPageState extends State<BookPage> {
                             ),
                           ),
                         ),
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                      ]),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Align(
+                        alignment: Alignment.bottomRight,
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             new SizedBox(
                               width: 120.0,
@@ -252,13 +276,18 @@ class _HomeCalendarPageState extends State<BookPage> {
                                 ),
                                 color: Colors.green,
                                 textColor: Colors.white,
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => HomePage()));
+                                },
                               ),
                             ),
                           ],
-                        )
-                      ]),
-                    ),
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ],

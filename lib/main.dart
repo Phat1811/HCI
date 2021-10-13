@@ -96,7 +96,7 @@ class _HomePageState extends State<HomePage> {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.account_circle_rounded),
-              label: 'Tôi',
+              label: 'Hồ Sơ',
               backgroundColor: Colors.blue,
             ),
           ],

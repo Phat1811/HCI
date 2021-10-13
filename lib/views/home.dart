@@ -121,47 +121,11 @@ class _HomePageLocalState extends State<HomePageLocal> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "HLV",
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Color(0xFF40D876),
-                        ),
-                      ),
-                      Text(
-                        "Địa điểm tập luyện",
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.white,
-                        ),
-                      ),
-                      Text(
-                        "Video",
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.white,
-                        ),
-                      ),
-                      Text(
-                        "Tin tức",
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
                   padding: const EdgeInsets.only(top: 30),
                   child: Row(
                     children: [
                       Text(
-                        "Gợi ý HLV",
+                        "Tất cả HLV",
                         style: TextStyle(
                             fontWeight: FontWeight.w700,
                             fontSize: 25,

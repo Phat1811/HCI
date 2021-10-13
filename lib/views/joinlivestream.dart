@@ -14,9 +14,13 @@ class LiveStream extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: Icon(
+          Icons.backpack,
+          color: Color(0xff222242),
+        ),
         backgroundColor: Color(0xff222242),
         title: Text(
-          'Kết nối phòng tập',
+          'Phòng tập trực tuyến',
           style: TextStyle(color: Colors.white),
         ),
         actions: <Widget>[
@@ -42,10 +46,10 @@ class LiveStream extends StatelessWidget {
                 color: Color(0xff222242),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(10.0),
                       child: Container(
                         width: 140.0,
                         height: 140.0,
@@ -58,13 +62,16 @@ class LiveStream extends StatelessWidget {
                                 (Border.all(color: Colors.white, width: 10.0))),
                       ),
                     ),
-                    Text(
-                      "Đức Đặng",
-                      style: TextStyle(
-                          fontSize: 30,
-                          color: Colors.green,
-                          fontWeight: FontWeight.bold),
-                    ),
+                    /*Padding(
+                      padding: const EdgeInsets.only(right: 30),
+                      child: Text(
+                        "Đức Đặng",
+                        style: TextStyle(
+                            fontSize: 30,
+                            color: Colors.green,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),*/
                     Align(
                       alignment: Alignment.centerLeft,
                       child: Padding(
@@ -73,6 +80,13 @@ class LiveStream extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
+                            Text(
+                              "Đức Đặng",
+                              style: TextStyle(
+                                  fontSize: 30,
+                                  color: Colors.green,
+                                  fontWeight: FontWeight.bold),
+                            ),
                             Text(
                               "Ngày: 12/10/2021",
                               style: TextStyle(
@@ -126,7 +140,7 @@ class LiveStream extends StatelessWidget {
                                       builder: (context) => LiveStreamPage()));
                             },
                             child: Text(
-                              'Tham gia phòng tập',
+                              'Tham gia',
                               style: TextStyle(color: Colors.white),
                             ),
                           ),

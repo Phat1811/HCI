@@ -5,6 +5,7 @@ class Category {
   final String name;
   final String star;
   final Widget page;
+  
 
   Category(
       {required this.imaUrl,
