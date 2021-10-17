@@ -141,24 +141,6 @@ class ProfilePage3 extends StatelessWidget {
                         ),
 
                         // Ngôn ngữ
-                        Expanded(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "Lịch tập",
-                                style: TextStyle(fontSize: 15),
-                              ),
-                              Text(
-                                "Còn trống",
-                                style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.green),
-                              )
-                            ],
-                          ),
-                        ),
                       ],
                     ),
                   ),

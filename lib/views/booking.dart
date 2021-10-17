@@ -101,7 +101,7 @@ class Booking extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Khóa học giảm mỡ",
+                                "Lớp học giảm mỡ",
                                 style: TextStyle(
                                     fontSize: 20,
                                     color: Color(0xFF363f93),
@@ -125,7 +125,7 @@ class Booking extends StatelessWidget {
                               ),
                               SizedBox(height: 10),
                               Text(
-                                "Bắt đầu từ ngày 20/10/2021 - 20/11/2021",
+                                "Bắt đầu từ ngày 21/10/2021 - 21/11/2021",
                                 style: TextStyle(
                                     fontSize: 16,
                                     color: Colors.grey,

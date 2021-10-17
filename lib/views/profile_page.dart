@@ -141,24 +141,6 @@ class ProfilePage1 extends StatelessWidget {
                         ),
 
                         // Ngôn ngữ
-                        Expanded(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "Giá tiền",
-                                style: TextStyle(fontSize: 15),
-                              ),
-                              Text(
-                                "100 coins/h",
-                                style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.black),
-                              )
-                            ],
-                          ),
-                        ),
                       ],
                     ),
                   ),

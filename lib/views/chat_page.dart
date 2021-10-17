@@ -54,10 +54,14 @@ class _ChatPage extends State<ChatPage> {
                   const EdgeInsets.only(left: 12.0, right: 12.0, top: 10.0),
               child: ListView(
                 children: [
-                  chatTile(imageUrl[0], "Alex", "PT", "9Am", false),
-                  chatTile(imageUrl[1], "Tom", "PT", "8Am", true),
-                  chatTile(imageUrl[2], "Emily", "PT", "6Am", true),
-                  chatTile(imageUrl[3], "John", "PT", "Yesterday", false),
+                  chatTile(imageUrl[0], "Đức Đặng", "Personal Trainer",
+                      "9am ago", false),
+                  chatTile(imageUrl[1], "Sophie Đỗ", "Personal Trainer",
+                      "8am ago", true),
+                  chatTile(imageUrl[2], "Ken Nguyễn", "Personal Trainer",
+                      "6am ago", true),
+                  chatTile(imageUrl[3], "Cris Nguyễn", "Personal Trainer",
+                      "Yesterday", false),
                 ],
               ),
             ),
@@ -112,18 +116,6 @@ class _ChatPage extends State<ChatPage> {
                   Row(
                     children: [
                       Expanded(child: Text(msg)),
-                      if (seen)
-                        Icon(
-                          Icons.check_circle,
-                          size: 18.0,
-                          color: Colors.green,
-                        ),
-                      if (!seen)
-                        Icon(
-                          Icons.check_circle_outline,
-                          color: Colors.grey,
-                          size: 18.0,
-                        ),
                     ],
                   ),
                 ],
