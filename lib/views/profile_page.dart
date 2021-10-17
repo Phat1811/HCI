@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import './schedulebook.dart';
+import 'package:hci_layout/views/booking.dart';
 
 class ProfilePage1 extends StatelessWidget {
   const ProfilePage1({Key? key}) : super(key: key);
@@ -132,11 +132,7 @@ class ProfilePage1 extends StatelessWidget {
                                 style: TextStyle(fontSize: 15),
                               ),
                               Text(
-<<<<<<< HEAD
                                 "902",
-=======
-                                "7902",
->>>>>>> 5c72add6103d36f8aab722dffcd2652311e8caa3
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               )
@@ -267,7 +263,7 @@ class ProfilePage1 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      /*child: Padding(
+                        /*child: Padding(
                         padding: const EdgeInsets.only(top: 5),
                         child: new SizedBox(
                           width: 150.0,
@@ -287,7 +283,7 @@ class ProfilePage1 extends StatelessWidget {
                           ),
                         ),
                       ),*/
-                    ),
+                        ),
                     SizedBox(
                       width: 10,
                     ),
@@ -302,7 +298,7 @@ class ProfilePage1 extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => BookPage()));
+                                      builder: (context) => BookingCourse()));
                             },
                             child: Text("Đặt lịch"),
                           ),

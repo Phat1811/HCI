@@ -11,19 +11,16 @@ class _LiveStreamPageState extends State<LiveStreamPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-<<<<<<< HEAD
-      appBar: AppBar(title: Text("Phòng tập : Đức Đặng ( PT-001)  ", 
-        style: TextStyle(color: Colors.white),), 
-          backgroundColor: Color(0xff222242),
-          leading: Icon(Icons.arrow_back, color: Colors.white,),
-=======
       appBar: AppBar(
         title: Text(
           "Phòng tập : Đức Đặng ( PT-001)  ",
           style: TextStyle(color: Colors.white),
         ),
         backgroundColor: Color(0xff222242),
->>>>>>> 5c72add6103d36f8aab722dffcd2652311e8caa3
+        leading: Icon(
+          Icons.arrow_back,
+          color: Colors.white,
+        ),
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -37,7 +34,7 @@ class _LiveStreamPageState extends State<LiveStreamPage> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Align(
-                alignment: Alignment.topRight,
+                alignment: Alignment.bottomRight,
                 child: Container(
                   width: 200,
                   height: 230,

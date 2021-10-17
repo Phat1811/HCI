@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hci_layout/mode.dart';
+import 'package:hci_layout/views/chat_page.dart';
 import 'package:hci_layout/views/home.dart';
 import 'package:hci_layout/views/livestream_page.dart';
 import 'package:hci_layout/views/profile_page.dart';
@@ -62,7 +63,7 @@ class _HomePageState extends State<HomePage> {
   final List pages = [
     HomePageLocal(),
     HomeCalendarPage(),
-    LiveStream(),
+    ChatPage(),
     Settings(),
   ];
   @override
@@ -91,7 +92,7 @@ class _HomePageState extends State<HomePage> {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.chat),
-              label: 'Tập luyện',
+              label: 'Liên Hệ',
               backgroundColor: Colors.blue,
             ),
             BottomNavigationBarItem(
