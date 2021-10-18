@@ -16,7 +16,7 @@ class Booking extends StatelessWidget {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xff222242),
         body: Column(
           children: [
             Container(
@@ -33,7 +33,7 @@ class Booking extends StatelessWidget {
                     left: 0,
                     child: Container(
                       height: 100,
-                      width: 300,
+                      width: 500,
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.only(
@@ -52,6 +52,7 @@ class Booking extends StatelessWidget {
             SizedBox(height: height * 0.05),
             Container(
                 height: 400,
+                width: 600,
                 child: Stack(children: [
                   Positioned(
                       top: 35,
@@ -59,7 +60,7 @@ class Booking extends StatelessWidget {
                       child: Material(
                         child: Container(
                             height: 220,
-                            width: width * 0.9,
+                            width: 400,
                             decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(0.0),
@@ -147,8 +148,9 @@ class Booking extends StatelessWidget {
                                 color: Colors.grey.shade600,
                               )
                             ],
-                          )))
-                ]))
+                          ))),                          
+                ])),
+                
           ],
         ));
   }
