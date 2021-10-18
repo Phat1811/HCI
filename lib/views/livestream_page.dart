@@ -17,6 +17,10 @@ class _LiveStreamPageState extends State<LiveStreamPage> {
           style: TextStyle(color: Colors.white),
         ),
         backgroundColor: Color(0xff222242),
+        leading: Icon(
+          Icons.arrow_back,
+          color: Colors.white,
+        ),
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -30,7 +34,7 @@ class _LiveStreamPageState extends State<LiveStreamPage> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Align(
-                alignment: Alignment.topRight,
+                alignment: Alignment.bottomRight,
                 child: Container(
                   width: 200,
                   height: 230,

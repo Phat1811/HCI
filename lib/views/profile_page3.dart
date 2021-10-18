@@ -105,7 +105,6 @@ class ProfilePage3 extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        //Kinh nghiệm
                         Expanded(
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -115,7 +114,7 @@ class ProfilePage3 extends StatelessWidget {
                                 style: TextStyle(fontSize: 15),
                               ),
                               Text(
-                                "7 Năm",
+                                "5 Năm",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               )
@@ -128,33 +127,13 @@ class ProfilePage3 extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Theo dõi",
+                                "Số người đăng ký",
                                 style: TextStyle(fontSize: 15),
                               ),
                               Text(
-                                "6814",
+                                "902",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
-                              )
-                            ],
-                          ),
-                        ),
-
-                        // Ngôn ngữ
-                        Expanded(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "Lịch tập",
-                                style: TextStyle(fontSize: 15),
-                              ),
-                              Text(
-                                "Còn trống",
-                                style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.green),
                               )
                             ],
                           ),
@@ -239,28 +218,28 @@ class ProfilePage3 extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Container(
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 5),
-                        child: new SizedBox(
-                          width: 150.0,
-                          height: 50.0,
-                          child: RaisedButton(
-                            onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => ProfilePage3()));
-                            },
-                            child: Text(
-                              "Theo dõi",
-                              style: TextStyle(color: Colors.black),
-                            ),
-                            color: Colors.greenAccent,
-                          ),
-                        ),
-                      ),
-                    ),
+                    // Container(
+                    //   child: Padding(
+                    //     padding: const EdgeInsets.only(top: 5),
+                    //     child: new SizedBox(
+                    //       width: 150.0,
+                    //       height: 50.0,
+                    //       child: RaisedButton(
+                    //         onPressed: () {
+                    //           Navigator.push(
+                    //               context,
+                    //               MaterialPageRoute(
+                    //                   builder: (context) => ProfilePage3()));
+                    //         },
+                    //         child: Text(
+                    //           "Theo dõi",
+                    //           style: TextStyle(color: Colors.black),
+                    //         ),
+                    //         color: Colors.greenAccent,
+                    //       ),
+                    //     ),
+                    //   ),
+                    // ),
                     SizedBox(
                       width: 10,
                     ),

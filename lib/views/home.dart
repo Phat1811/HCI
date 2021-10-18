@@ -4,10 +4,13 @@ import 'package:hci_layout/views/profile_page.dart';
 import 'package:hci_layout/views/profile_page2.dart';
 import 'package:hci_layout/views/profile_page3.dart';
 import 'package:hci_layout/views/profile_page4.dart';
-
+import 'package:hci_layout/views/profile_page5.dart';
+import 'package:hci_layout/views/profile_page6.dart';
+import 'package:hci_layout/views/profile_page7.dart';
+import 'package:hci_layout/views/profile_page8.dart';
 
 class HomePageLocal extends StatefulWidget {
-  const HomePageLocal({ Key? key }) : super(key: key);
+  const HomePageLocal({Key? key}) : super(key: key);
 
   @override
   _HomePageLocalState createState() => _HomePageLocalState();
@@ -35,211 +38,298 @@ class _HomePageLocalState extends State<HomePageLocal> {
         name: "Chris Nguyễn",
         star: "Đánh giá: 4.7/5",
         page: ProfilePage4()),
+    Category(
+        imaUrl: "assets/pt5.png",
+        name: "Trịnh Ngọc Phương",
+        star: "Đánh giá: 4.7/5",
+        page: ProfilePage5()),
+    Category(
+        imaUrl: "assets/pt6.png",
+        name: "Lita Trần",
+        star: "Đánh giá: 4.7/5",
+        page: ProfilePage6()),
+    Category(
+        imaUrl: "assets/pt7.png",
+        name: "Tấn Tài",
+        star: "Đánh giá: 4.7/5",
+        page: ProfilePage7()),
+    Category(
+        imaUrl: "assets/pt8.png",
+        name: "Phước Tạo",
+        star: "Đánh giá: 4.7/5",
+        page: ProfilePage8()),
+  ];
+
+  final List<Category2> catego2 = [
+    Category2(
+        imaUrl: "assets/pt5.png",
+        name: "Trịnh Ngọc Phương",
+        star: "Đánh giá: 4.7/5",
+        page: ProfilePage5()),
+    Category2(
+        imaUrl: "assets/pt6.png",
+        name: "Lita Trần",
+        star: "Đánh giá: 4.7/5",
+        page: ProfilePage6()),
+    Category2(
+        imaUrl: "assets/pt7.png",
+        name: "Tấn Tài",
+        star: "Đánh giá: 4.7/5",
+        page: ProfilePage7()),
+    Category2(
+        imaUrl: "assets/pt8.png",
+        name: "Phước Tạo",
+        star: "Đánh giá: 4.7/5",
+        page: ProfilePage8()),
   ];
   @override
   Widget build(BuildContext context) {
     return Container(
-          width: double.infinity,
-          height: double.infinity,
-          decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage("assets/theme.png"), fit: BoxFit.cover)),
-          child: Padding(
-            padding: const EdgeInsets.only(top: 40, left: 20),
-            child: ListView(
+      width: double.infinity,
+      height: double.infinity,
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage("assets/theme.png"), fit: BoxFit.cover)),
+      child: Padding(
+        padding: const EdgeInsets.only(top: 40, left: 20),
+        child: ListView(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Row(
-                      children: [
-                        Text(
-                          "Chào, ",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 25,
-                              color: Colors.white),
-                        ),
-                        Text(
-                          "Dương",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 25,
-                              color: Color(0xFF40D876)),
-                        )
-                      ],
+                    Text(
+                      "Chào, ",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 25,
+                          color: Colors.white),
                     ),
-                    Container(
-                      child: CircleAvatar(
-                        radius: 30,
-                        backgroundImage: AssetImage("assets/avata.jpg"),
-                      ),
+                    Text(
+                      "Dương",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 25,
+                          color: Color(0xFF40D876)),
                     )
                   ],
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 90, left: 20),
-                  child: Row(
-                    children: [
-                      Row(
-                        children: [
-                          Text(
-                            "Find",
-                            style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 25,
-                                color: Color(0xFF40D876)),
-                          ),
-                          Text(
-                            " your Workout",
-                            style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 25,
-                                color: Colors.white),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                ),
                 Container(
-                  margin: EdgeInsets.symmetric(vertical: 10),
-                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 1),
-                  decoration: BoxDecoration(
-                    color: Color(0xFF232441),
-                    borderRadius: BorderRadius.circular(30),
+                  child: CircleAvatar(
+                    radius: 30,
+                    backgroundImage: AssetImage("assets/avata.jpg"),
                   ),
-                  child: TextField(
-                    decoration: InputDecoration(
-                        hintText: "Tìm kiếm HLV",
-                        hintStyle: TextStyle(color: Colors.white),
-                        icon: Icon(
-                          Icons.search,
-                          color: Colors.white,
-                        ),
-                        border: InputBorder.none),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                )
+              ],
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 90, left: 20),
+              child: Row(
+                children: [
+                  Row(
                     children: [
                       Text(
-                        "HLV",
+                        "Find",
                         style: TextStyle(
-                          fontSize: 16,
-                          color: Color(0xFF40D876),
-                        ),
+                            fontWeight: FontWeight.w700,
+                            fontSize: 25,
+                            color: Color(0xFF40D876)),
                       ),
                       Text(
-                        "Địa điểm tập luyện",
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.white,
-                        ),
-                      ),
-                      Text(
-                        "Video",
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.white,
-                        ),
-                      ),
-                      Text(
-                        "Tin tức",
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 30),
-                  child: Row(
-                    children: [
-                      Text(
-                        "Gợi ý HLV",
+                        " your Workout",
                         style: TextStyle(
                             fontWeight: FontWeight.w700,
                             fontSize: 25,
                             color: Colors.white),
-                      ),
+                      )
                     ],
+                  )
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 10),
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 1),
+              decoration: BoxDecoration(
+                color: Color(0xFF232441),
+                borderRadius: BorderRadius.circular(30),
+              ),
+              child: TextField(
+                decoration: InputDecoration(
+                    hintText: "Tìm kiếm HLV",
+                    hintStyle: TextStyle(color: Colors.white),
+                    icon: Icon(
+                      Icons.search,
+                      color: Colors.white,
+                    ),
+                    border: InputBorder.none),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 30),
+              child: Row(
+                children: [
+                  Text(
+                    "Tất cả HLV",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 25,
+                        color: Colors.white),
                   ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 40),
-                  child: Container(
-                      width: double.infinity,
-                      height: 300,
-                      child: ListView.builder(
-                          itemCount: catego.length,
-                          scrollDirection: Axis.horizontal,
-                          itemBuilder: (BuildContext context, index) {
-                            return Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 10),
-                              child: Column(
-                                children: [
-                                  Container(
-                                    height: 200,
-                                    width: 150,
-                                    decoration: BoxDecoration(
-                                      image: DecorationImage(
-                                        image: AssetImage(catego[index].imaUrl),
-                                        fit: BoxFit.cover,
-                                      ),
-                                      borderRadius: BorderRadius.circular(30),
-                                    ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 40),
+              child: Container(
+                  width: double.infinity,
+                  height: 300,
+                  child: ListView.builder(
+                      itemCount: catego.length,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (BuildContext context, index) {
+                        return Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          child: Column(
+                            children: [
+                              Container(
+                                height: 200,
+                                width: 150,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: AssetImage(catego[index].imaUrl),
+                                    fit: BoxFit.cover,
                                   ),
-                                  Column(
+                                  borderRadius: BorderRadius.circular(30),
+                                ),
+                              ),
+                              Column(
+                                children: [
+                                  SizedBox(
+                                    height: 5,
+                                  ),
+                                  Text(
+                                    catego[index].name,
+                                    style: TextStyle(
+                                        fontSize: 20, color: Colors.white),
+                                  ),
+                                  Wrap(
+                                    crossAxisAlignment:
+                                        WrapCrossAlignment.center,
                                     children: [
-                                      SizedBox(
-                                        height: 5,
+                                      Text(catego[index].star,
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          )),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.yellow,
                                       ),
-                                      Text(
-                                        catego[index].name,
-                                        style: TextStyle(
-                                            fontSize: 20, color: Colors.white),
-                                      ),
-                                      Wrap(
-                                        crossAxisAlignment:
-                                            WrapCrossAlignment.center,
-                                        children: [
-                                          Text(catego[index].star,
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                              )),
-                                          Icon(
-                                            Icons.star,
-                                            color: Colors.yellow,
-                                          ),
-                                        ],
-                                      ),
-                                      RaisedButton(
-                                        onPressed: () {
-                                          Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      catego[index].page));
-                                        },
-                                        child: Text('Tìm hiểu'),
-                                        color: Colors.white,
-                                      )
                                     ],
+                                  ),
+                                  RaisedButton(
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  catego[index].page));
+                                    },
+                                    child: Text('Tìm hiểu'),
+                                    color: Colors.white,
                                   )
                                 ],
-                              ),
-                            );
-                          })),
-                )
-              ],
+                              )
+                            ],
+                          ),
+                        );
+                      })),
             ),
-          ),
-        );
+            //------------------------------
+            Padding(
+              padding: const EdgeInsets.only(top: 30),
+              child: Row(
+                children: [
+                  Text(
+                    "HLV mới",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 25,
+                        color: Colors.white),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 40),
+              child: Container(
+                  width: double.infinity,
+                  height: 300,
+                  child: ListView.builder(
+                      itemCount: catego2.length,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (BuildContext context, index) {
+                        return Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          child: Column(
+                            children: [
+                              Container(
+                                height: 200,
+                                width: 150,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: AssetImage(catego2[index].imaUrl),
+                                    fit: BoxFit.cover,
+                                  ),
+                                  borderRadius: BorderRadius.circular(30),
+                                ),
+                              ),
+                              Column(
+                                children: [
+                                  SizedBox(
+                                    height: 5,
+                                  ),
+                                  Text(
+                                    catego2[index].name,
+                                    style: TextStyle(
+                                        fontSize: 20, color: Colors.white),
+                                  ),
+                                  Wrap(
+                                    crossAxisAlignment:
+                                        WrapCrossAlignment.center,
+                                    children: [
+                                      Text(catego2[index].star,
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          )),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.yellow,
+                                      ),
+                                    ],
+                                  ),
+                                  RaisedButton(
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  catego2[index].page));
+                                    },
+                                    child: Text('Tìm hiểu'),
+                                    color: Colors.white,
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        );
+                      })),
+            )
+          ],
+        ),
+      ),
+    );
   }
 }

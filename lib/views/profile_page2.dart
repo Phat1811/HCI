@@ -86,8 +86,8 @@ class ProfilePage2 extends StatelessWidget {
                           size: 20,
                         ),
                         Icon(
-                          Icons.star,
-                          color: Colors.grey,
+                          Icons.star_half,
+                          color: Colors.yellow,
                           size: 20,
                         ),
                         const Text('(4)',
@@ -128,11 +128,11 @@ class ProfilePage2 extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Theo dõi",
+                                "Số người đăng ký",
                                 style: TextStyle(fontSize: 15),
                               ),
                               Text(
-                                "4875",
+                                "1875",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               )
@@ -141,24 +141,6 @@ class ProfilePage2 extends StatelessWidget {
                         ),
 
                         // Ngôn ngữ
-                        Expanded(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "Lịch tập",
-                                style: TextStyle(fontSize: 15),
-                              ),
-                              Text(
-                                "Còn trống",
-                                style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.green),
-                              )
-                            ],
-                          ),
-                        ),
                       ],
                     ),
                   ),
@@ -262,7 +244,7 @@ class ProfilePage2 extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Container(
+                    /*Container(
                       child: Padding(
                         padding: const EdgeInsets.only(top: 5),
                         child: new SizedBox(
@@ -283,7 +265,7 @@ class ProfilePage2 extends StatelessWidget {
                           ),
                         ),
                       ),
-                    ),
+                    ),*/
                     SizedBox(
                       width: 10,
                     ),

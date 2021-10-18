@@ -63,6 +63,10 @@ flutter:
     - pt2.jpg
     - pt3.jpg
     - pt4.jpeg
+    - pt5.png
+    - pt6.png
+    - pt7.png
+    - pt8.png
     - backgrond.png
     #1
     - ptpic1.png
@@ -76,6 +80,19 @@ flutter:
     #4
     - pt4pic1.png
     - pt4pic2.png
+    #5
+    - pt5pic1.png
+    - pt5pic2.png
+    #6
+    - pt6pic1.png
+    - pt6pic2.png
+    #7
+    - pt7pic1.png
+    - pt7pic2.png
+    #8
+    - pt8pic1.png
+    - pt8pic2.png
+
 
     #livestream
     - trainee_livestream.png

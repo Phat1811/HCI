@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import './schedulebook.dart';
+import 'package:hci_layout/views/booking.dart';
 
 class ProfilePage1 extends StatelessWidget {
   const ProfilePage1({Key? key}) : super(key: key);
@@ -86,11 +86,11 @@ class ProfilePage1 extends StatelessWidget {
                           size: 20,
                         ),
                         Icon(
-                          Icons.star,
-                          color: Colors.grey,
+                          Icons.star_half,
+                          color: Colors.yellow,
                           size: 20,
                         ),
-                        const Text('(4)',
+                        const Text('(4.5)',
                             style: TextStyle(color: Colors.white)),
                       ],
                     ),
@@ -128,11 +128,11 @@ class ProfilePage1 extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Theo dõi",
+                                "Số người đăng ký",
                                 style: TextStyle(fontSize: 15),
                               ),
                               Text(
-                                "7902",
+                                "902",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               )
@@ -141,24 +141,6 @@ class ProfilePage1 extends StatelessWidget {
                         ),
 
                         // Ngôn ngữ
-                        Expanded(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "Lịch tập",
-                                style: TextStyle(fontSize: 15),
-                              ),
-                              Text(
-                                "Còn trống",
-                                style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.green),
-                              )
-                            ],
-                          ),
-                        ),
                       ],
                     ),
                   ),
@@ -200,7 +182,7 @@ class ProfilePage1 extends StatelessWidget {
                               width: 10,
                             ),
                             Chip(
-                              label: const Text('Tăng cân'),
+                              label: const Text('Giảm mỡ'),
                             ),
                             SizedBox(
                               width: 10,
@@ -242,7 +224,7 @@ class ProfilePage1 extends StatelessWidget {
                         SizedBox(
                           width: 10,
                         ),
-                        Text("Tiểu Sử",
+                        Text("Giới thiệu",
                             style: TextStyle(
                                 fontSize: 30,
                                 color: Colors.greenAccent,
@@ -263,7 +245,7 @@ class ProfilePage1 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      child: Padding(
+                        /*child: Padding(
                         padding: const EdgeInsets.only(top: 5),
                         child: new SizedBox(
                           width: 150.0,
@@ -282,8 +264,8 @@ class ProfilePage1 extends StatelessWidget {
                             color: Colors.greenAccent,
                           ),
                         ),
-                      ),
-                    ),
+                      ),*/
+                        ),
                     SizedBox(
                       width: 10,
                     ),
@@ -298,7 +280,7 @@ class ProfilePage1 extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => BookPage()));
+                                      builder: (context) => BookingCourse()));
                             },
                             child: Text("Đặt lịch"),
                           ),
