@@ -55,11 +55,11 @@ class _ChatPage extends State<ChatPage> {
               child: ListView(
                 children: [
                   chatTile(imageUrl[0], "Đức Đặng", "Personal Trainer",
-                      "9am ago", false),
+                      "9h ago", false),
                   chatTile(imageUrl[1], "Sophie Đỗ", "Personal Trainer",
-                      "8am ago", true),
+                      "8h ago", true),
                   chatTile(imageUrl[2], "Ken Nguyễn", "Personal Trainer",
-                      "6am ago", true),
+                      "6h ago", true),
                   chatTile(imageUrl[3], "Cris Nguyễn", "Personal Trainer",
                       "Yesterday", false),
                 ],

@@ -161,7 +161,7 @@ class _HomeCalendarPageState extends State<HomeCalendarPage> {
                                     MaterialPageRoute(
                                         builder: (context) => LiveStream()));
                               },
-                              child: Text("Đặt lịch"),
+                              child: Text("Tham gia"),
                             ),
                           ),
                         ],

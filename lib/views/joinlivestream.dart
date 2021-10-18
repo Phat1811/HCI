@@ -141,7 +141,7 @@ class LiveStream extends StatelessWidget {
                                       builder: (context) => LiveStreamPage()));
                             },
                             child: Text(
-                              'Tham gia',
+                              'Tham gia lớp học',
                               style: TextStyle(color: Colors.white),
                             ),
                           ),

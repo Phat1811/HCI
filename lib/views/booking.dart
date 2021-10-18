@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:hci_layout/main.dart';
 import 'package:hci_layout/views/home.dart';
 import 'package:hci_layout/views/schedule.dart';
 
-class BookingCourse extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Booking());
-  }
-}
+// class BookingCourse extends StatelessWidget {
+//   // This widget is the root of your application.
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(debugShowCheckedModeBanner: false, home: Booking());
+//   }
+// }
 
 class Booking extends StatelessWidget {
   @override
@@ -138,8 +139,7 @@ class Booking extends StatelessWidget {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) =>
-                                              HomeCalendarPage()));
+                                          builder: (context) => HomePage()));
                                 },
                                 child: Text("Đăng ký ",
                                     style: TextStyle(
@@ -148,9 +148,8 @@ class Booking extends StatelessWidget {
                                 color: Colors.grey.shade600,
                               )
                             ],
-                          ))),                          
+                          ))),
                 ])),
-                
           ],
         ));
   }

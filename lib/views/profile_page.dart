@@ -280,7 +280,7 @@ class ProfilePage1 extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => BookingCourse()));
+                                      builder: (context) => Booking()));
                             },
                             child: Text("Đặt lịch"),
                           ),
