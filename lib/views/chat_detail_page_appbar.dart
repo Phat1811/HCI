@@ -6,9 +6,13 @@ class ChatDetailPageAppBar extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      leading: Icon(
+          Icons.arrow_back,
+          color: Colors.white,
+        ),
       elevation: 0,
       automaticallyImplyLeading: false,
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xff14142b),
       flexibleSpace: SafeArea(
         child: Container(
           padding: EdgeInsets.only(right: 16),
@@ -39,8 +43,8 @@ class ChatDetailPageAppBar extends StatelessWidget
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Text(
-                      "Jane Russel",
-                      style: TextStyle(fontWeight: FontWeight.w600),
+                      "Đức Đặng",
+                      style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white),
                     ),
                     SizedBox(
                       height: 6,
@@ -54,7 +58,7 @@ class ChatDetailPageAppBar extends StatelessWidget
               ),
               Icon(
                 Icons.more_vert,
-                color: Colors.grey.shade700,
+                color: Colors.white,
               ),
             ],
           ),
