@@ -46,7 +46,7 @@ class Booking extends StatelessWidget {
                   Positioned(
                       top: 115,
                       left: 20,
-                      child: Text("Danh sách lớp học",
+                      child: Text("Đăng ký khóa học",
                           style: TextStyle(
                               fontSize: 20, color: Color(0xFF363f93))))
                 ])),
@@ -60,7 +60,7 @@ class Booking extends StatelessWidget {
                       left: 20,
                       child: Material(
                         child: Container(
-                            height: 220,
+                            height: 280,
                             width: 400,
                             decoration: BoxDecoration(
                                 color: Colors.white,
@@ -103,7 +103,7 @@ class Booking extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Lớp học giảm mỡ",
+                                "Khóa học giảm mỡ",
                                 style: TextStyle(
                                     fontSize: 20,
                                     color: Color(0xFF363f93),
@@ -111,7 +111,7 @@ class Booking extends StatelessWidget {
                               ),
                               SizedBox(height: 10),
                               Text(
-                                "Huấn luyện viên: Đức Đặng",
+                                "HLV cá nhân: Đức Đặng",
                                 style: TextStyle(
                                     fontSize: 16,
                                     color: Colors.grey,
@@ -119,7 +119,7 @@ class Booking extends StatelessWidget {
                               ),
                               Divider(color: Colors.black),
                               Text(
-                                "Thời gian : 1 tháng(13h - 15h)",
+                                "Thời gian khóa học : 1 tháng (13h - 15h)",
                                 style: TextStyle(
                                     fontSize: 16,
                                     color: Colors.grey,
@@ -127,7 +127,15 @@ class Booking extends StatelessWidget {
                               ),
                               SizedBox(height: 10),
                               Text(
-                                "Bắt đầu từ ngày 19/10/2021 - 19/11/2021",
+                                "Bắt đầu từ : 19/10/2021 - 19/11/2021",
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(height: 10),
+                              Text(
+                                "Giá khóa học : 3 triệu ",
                                 style: TextStyle(
                                     fontSize: 16,
                                     color: Colors.grey,
@@ -141,7 +149,7 @@ class Booking extends StatelessWidget {
                                       MaterialPageRoute(
                                           builder: (context) => HomePage()));
                                 },
-                                child: Text("Đăng ký ",
+                                child: Text("Đăng ký ngay",
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         color: Colors.white)),
