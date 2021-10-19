@@ -42,21 +42,29 @@ class _HomePageState extends State<HomePage> {
         imaUrl: "assets/pt1.jpg",
         name: "Đức Đặng",
         star: "Đánh giá: 4.5/5",
+        skill: "Gym",
+        money: "2tr/1 khóa",
         page: ProfilePage1()),
     Category(
         imaUrl: "assets/pt2.jpg",
         name: "Sophie Đỗ",
         star: "Đánh giá: 4.8/5",
+        skill: "Gym",
+        money: "2tr/1 khóa",
         page: ProfilePage2()),
     Category(
         imaUrl: "assets/pt3.jpg",
         name: "Ken Nguyễn",
         star: "Đánh giá: 4.9/5",
+        skill: "Gym",
+        money: "2tr/1 khóa",
         page: ProfilePage3()),
     Category(
         imaUrl: "assets/pt4.jpeg",
         name: "Chris Nguyễn",
         star: "Đánh giá: 4.7/5",
+        skill: "Gym",
+        money: "2tr/1 khóa",
         page: ProfilePage4()),
   ];
   int _currentIndex = 0;

@@ -22,41 +22,57 @@ class _HomePageLocalState extends State<HomePageLocal> {
         imaUrl: "assets/pt1.jpg",
         name: "Đức Đặng",
         star: "Đánh giá: 4.5/5",
+        skill: "Chuyên môn :Gym",
+        money: "Giá: 3triệu/1 khóa",
         page: ProfilePage1()),
     Category(
         imaUrl: "assets/pt2.jpg",
         name: "Sophie Đỗ",
         star: "Đánh giá: 4.8/5",
+        skill: "Chuyên môn :Yoga",
+        money: "Giá: 2triệu/1 khóa",
         page: ProfilePage2()),
     Category(
         imaUrl: "assets/pt3.jpg",
         name: "Ken Nguyễn",
         star: "Đánh giá: 4.9/5",
+        skill: "Chuyên môn :Gym",
+        money: "Giá: 2triệu/1 khóa",
         page: ProfilePage3()),
     Category(
         imaUrl: "assets/pt4.jpeg",
         name: "Chris Nguyễn",
         star: "Đánh giá: 4.7/5",
+        skill: "Chuyên môn :Gym",
+        money: "Giá: 2triệu/1 khóa",
         page: ProfilePage4()),
     Category(
         imaUrl: "assets/pt5.png",
         name: "Trịnh Ngọc Phương",
         star: "Đánh giá: 4.7/5",
+        skill: "Chuyên môn :Gym",
+        money: "Giá: 2triệu/1 khóa",
         page: ProfilePage5()),
     Category(
         imaUrl: "assets/pt6.png",
         name: "Lita Trần",
         star: "Đánh giá: 4.7/5",
+        skill: "Chuyên môn :Gym",
+        money: "Giá: 2triệu/1 khóa",
         page: ProfilePage6()),
     Category(
         imaUrl: "assets/pt7.png",
         name: "Tấn Tài",
         star: "Đánh giá: 4.7/5",
+        skill: "Chuyên môn :Gym",
+        money: "Giá: 2triệu/1 khóa",
         page: ProfilePage7()),
     Category(
         imaUrl: "assets/pt8.png",
         name: "Phước Tạo",
         star: "Đánh giá: 4.7/5",
+        skill: "Chuyên môn :Gym",
+        money: "Giá: 2triệu/1 khóa",
         page: ProfilePage8()),
   ];
 
@@ -188,7 +204,7 @@ class _HomePageLocalState extends State<HomePageLocal> {
                     padding: const EdgeInsets.only(top: 40),
                     child: Container(
                         width: double.infinity,
-                        height: 300,
+                        height: 350,
                         child: ListView.builder(
                             itemCount: catego.length,
                             scrollDirection: Axis.horizontal,
@@ -233,6 +249,26 @@ class _HomePageLocalState extends State<HomePageLocal> {
                                               Icons.star,
                                               color: Colors.yellow,
                                             ),
+                                          ],
+                                        ),
+                                        Wrap(
+                                          crossAxisAlignment:
+                                              WrapCrossAlignment.center,
+                                          children: [
+                                            Text(catego[index].skill,
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                )),
+                                          ],
+                                        ),
+                                        Wrap(
+                                          crossAxisAlignment:
+                                              WrapCrossAlignment.center,
+                                          children: [
+                                            Text(catego[index].money,
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                )),
                                           ],
                                         ),
                                         RaisedButton(
