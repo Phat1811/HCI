@@ -127,7 +127,7 @@ class Booking extends StatelessWidget {
                               ),
                               SizedBox(height: 10),
                               Text(
-                                "Bắt đầu từ ngày 21/10/2021 - 21/11/2021",
+                                "Bắt đầu từ ngày 19/10/2021 - 19/11/2021",
                                 style: TextStyle(
                                     fontSize: 16,
                                     color: Colors.grey,

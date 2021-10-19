@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.chat),
-              label: 'Liên Hệ',
+              label: 'Trò chuyện',
               backgroundColor: Colors.blue,
             ),
             BottomNavigationBarItem(
