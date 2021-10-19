@@ -138,6 +138,22 @@ class ProfilePage3 extends StatelessWidget {
                             ],
                           ),
                         ),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Giá tiền",
+                                style: TextStyle(fontSize: 15),
+                              ),
+                              Text(
+                                "2 triệu / 1 khóa",
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.w600),
+                              )
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
