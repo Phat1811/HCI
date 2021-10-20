@@ -89,7 +89,7 @@ class LiveStream extends StatelessWidget {
                                   fontWeight: FontWeight.bold),
                             ),
                             Text(
-                              "Ngày: 21/10/2021",
+                              "Ngày tập: 21/10/2021",
                               style: TextStyle(
                                 fontSize: 20,
                                 color: Colors.white,
@@ -99,7 +99,7 @@ class LiveStream extends StatelessWidget {
                               height: 10,
                             ),
                             Text(
-                              "Thời gian tập: 13:00 -> 15:00",
+                              "Thời gian tập: 13:00 - 15:00",
                               style: TextStyle(
                                 fontSize: 20,
                                 color: Colors.white,
@@ -109,7 +109,7 @@ class LiveStream extends StatelessWidget {
                               height: 10,
                             ),
                             Text(
-                              "Nội dung tập: đùi, cardio",
+                              "Nội dung tập: bụng - cơ liên sườn",
                               style: TextStyle(
                                 fontSize: 20,
                                 color: Colors.white,

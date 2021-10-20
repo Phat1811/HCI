@@ -66,9 +66,9 @@ class _booking_traineeState extends State<booking_trainee> {
                               });
                             },
                             items: [
-                              "15 ngày / tối thiểu 5 buổi tập",
-                              "30 ngày / tối thiểu 10 buổi tập",
-                              "60 ngày / tối thiểu 20 buổi tập "
+                              "15 ngày ( tối thiểu 5 buổi tập )",
+                              "30 ngày ( tối thiểu 15 buổi tập )",
+                              "60 ngày ( tối thiểu 35 buổi tập ) "
                             ].map((valueDay) {
                               return DropdownMenuItem(
                                   value: (valueDay),

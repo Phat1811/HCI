@@ -23,28 +23,28 @@ class _HomePageLocalState extends State<HomePageLocal> {
         name: "Đức Đặng",
         star: "Đánh giá: 4.5/5",
         skill: "Chuyên môn :Gym",
-        money: "Giá: 3triệu/1 khóa",
+        money: "Giá: 100 ngàn / 1 buổi tập",
         page: ProfilePage1()),
     Category(
         imaUrl: "assets/pt2.jpg",
         name: "Sophie Đỗ",
         star: "Đánh giá: 4.8/5",
         skill: "Chuyên môn :Yoga",
-        money: "Giá: 2triệu/1 khóa",
+        money: "Giá: 150 ngàn/ 1 buổi tập",
         page: ProfilePage2()),
     Category(
         imaUrl: "assets/pt3.jpg",
         name: "Ken Nguyễn",
         star: "Đánh giá: 4.9/5",
         skill: "Chuyên môn :Gym",
-        money: "Giá: 2triệu/1 khóa",
+        money: "Giá: 100 ngàn / 1 buổi tập",
         page: ProfilePage3()),
     Category(
         imaUrl: "assets/pt4.jpeg",
         name: "Chris Nguyễn",
         star: "Đánh giá: 4.7/5",
         skill: "Chuyên môn :Gym",
-        money: "Giá: 2triệu/1 khóa",
+        money: "Giá: 100 ngàn / 1 buổi tập",
         page: ProfilePage4()),
     Category(
         imaUrl: "assets/pt5.png",
@@ -227,6 +227,7 @@ class _HomePageLocalState extends State<HomePageLocal> {
                                       ),
                                     ),
                                     Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         SizedBox(
                                           height: 5,
@@ -235,8 +236,9 @@ class _HomePageLocalState extends State<HomePageLocal> {
                                           catego[index].name,
                                           style: TextStyle(
                                               fontSize: 20,
-                                              color: Colors.white),
+                                              color: Colors.green),
                                         ),
+                                        SizedBox(height: 5),
                                         Wrap(
                                           crossAxisAlignment:
                                               WrapCrossAlignment.center,
@@ -251,6 +253,7 @@ class _HomePageLocalState extends State<HomePageLocal> {
                                             ),
                                           ],
                                         ),
+                                        SizedBox(height: 5),
                                         Wrap(
                                           crossAxisAlignment:
                                               WrapCrossAlignment.center,
@@ -261,6 +264,7 @@ class _HomePageLocalState extends State<HomePageLocal> {
                                                 )),
                                           ],
                                         ),
+                                        SizedBox(height: 5),
                                         Wrap(
                                           crossAxisAlignment:
                                               WrapCrossAlignment.center,
@@ -271,6 +275,7 @@ class _HomePageLocalState extends State<HomePageLocal> {
                                                 )),
                                           ],
                                         ),
+                                        SizedBox(height: 5),
                                         RaisedButton(
                                           onPressed: () {
                                             Navigator.push(
