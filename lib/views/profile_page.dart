@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hci_layout/views/booking.dart';
+import 'package:hci_layout/views/trainee_booking.dart';
 
 class ProfilePage1 extends StatelessWidget {
   const ProfilePage1({Key? key}) : super(key: key);
@@ -99,7 +100,7 @@ class ProfilePage1 extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
-                    height: 60,
+                    height: 70,
                     decoration: BoxDecoration(color: Colors.grey.shade300),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -148,7 +149,7 @@ class ProfilePage1 extends StatelessWidget {
                                 style: TextStyle(fontSize: 15),
                               ),
                               Text(
-                                "3 triệu / 1 khóa",
+                                "100 ngàn / 1 buổi tập ",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               )
@@ -296,7 +297,7 @@ class ProfilePage1 extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => Booking()));
+                                      builder: (context) => booking_trainee()));
                             },
                             child: Text("Đặt lịch"),
                           ),

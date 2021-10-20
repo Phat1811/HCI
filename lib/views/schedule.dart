@@ -151,6 +151,8 @@ class _HomeCalendarPageState extends State<HomeCalendarPage> {
                           SizedBox(
                             height: 10,
                           ),
+                          Text("Ngày tập : 25/10/2021" , style: TextStyle(color: Colors.white),),
+                          SizedBox(height: 10),
                           new SizedBox(
                             width: 120.0,
                             height: 30.0,
