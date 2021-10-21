@@ -29,7 +29,7 @@ class _HomeCalendarPageState extends State<HomeCalendarPage> {
           children: <Widget>[
             TableCalendar(
               calendarStyle: CalendarStyle(
-                defaultTextStyle: TextStyle(color: Colors.white),
+                defaultTextStyle: TextStyle(color: Colors.red),
                 weekendTextStyle: TextStyle(color: Colors.white),
                 outsideTextStyle: TextStyle(color: Colors.white),
                 todayTextStyle: TextStyle(color: Colors.white),
@@ -39,7 +39,6 @@ class _HomeCalendarPageState extends State<HomeCalendarPage> {
                 withinRangeTextStyle: TextStyle(color: Colors.white),
                 selectedTextStyle: TextStyle(color: Colors.white),
                 rangeStartTextStyle: TextStyle(color: Colors.white),
-
               ),
               headerStyle: HeaderStyle(
                 formatButtonTextStyle: TextStyle(color: Colors.white),
@@ -110,168 +109,167 @@ class time_day1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: <Widget>[
-          Card(
-            color: Color(0xff222242),
-            child: InkWell(
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => LiveStream()));
-              },
-              child: Row(children: <Widget>[
-                Container(
-                  margin: EdgeInsets.symmetric(
-                    vertical: 10,
-                    horizontal: 15,
-                  ),
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.green,
-                      width: 2,
+    return Scaffold(
+      body: Container(
+        child: Column(
+          children: <Widget>[
+            Card(
+              color: Color(0xff222242),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => LiveStream()));
+                },
+                child: Row(children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.symmetric(
+                      vertical: 10,
+                      horizontal: 15,
                     ),
-                  ),
-                  padding: EdgeInsets.all(10),
-                  child: Text(
-                    '13:00 - 15:00',
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                        color: Colors.white),
-                  ),
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      'Lịch tập với PT Đức Đặng',
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.green),
-                    ),
-                    SizedBox(
-                      height: 4,
-                    ),
-                    Text(
-                      'Bài tập: cơ tay - cardio',
-                      style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      "Ngày tập : 25/10/2021",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    SizedBox(height: 10),
-                    new SizedBox(
-                      width: 120.0,
-                      height: 30.0,
-                      child: RaisedButton(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => LiveStream()));
-                        },
-                        child: Text("Tham gia"),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.green,
+                        width: 2,
                       ),
                     ),
-                  ],
-                )
-              ]),
-            ),
-          ),
-          SizedBox(height: 10),
-                    Card(
-            color: Color(0xff222242),
-            child: InkWell(
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => LiveStream()));
-              },
-              child: Row(children: <Widget>[
-                Container(
-                  margin: EdgeInsets.symmetric(
-                    vertical: 10,
-                    horizontal: 15,
-                  ),
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.green,
-                      width: 2,
-                    ),
-                  ),
-                  padding: EdgeInsets.all(10),
-                  child: Text(
-                    '15:00 - 19:00',
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                        color: Colors.white),
-                  ),
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      'Lịch tập với PT Đức Đặng',
+                    padding: EdgeInsets.all(10),
+                    child: Text(
+                      '13:00 - 15:00',
                       style: TextStyle(
+                          fontWeight: FontWeight.bold,
                           fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.green),
-                    ),
-                    SizedBox(
-                      height: 4,
-                    ),
-                    Text(
-                      'Bài tập: cơ tay - cardio',
-                      style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
                           color: Colors.white),
                     ),
-                    SizedBox(
-                      height: 10,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'Lịch tập với PT Đức Đặng',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.green),
+                      ),
+                      SizedBox(
+                        height: 4,
+                      ),
+                      Text(
+                        'Bài tập: cơ tay - cardio',
+                        style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        "Ngày tập : 25/10/2021",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      SizedBox(height: 10),
+                      new SizedBox(
+                        width: 120.0,
+                        height: 30.0,
+                        child: RaisedButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LiveStream()));
+                          },
+                          child: Text("Tham gia"),
+                        ),
+                      ),
+                    ],
+                  )
+                ]),
+              ),
+            ),
+            SizedBox(height: 10),
+            Card(
+              color: Color(0xff222242),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => LiveStream()));
+                },
+                child: Row(children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.symmetric(
+                      vertical: 10,
+                      horizontal: 15,
                     ),
-                    Text(
-                      "Ngày tập : 25/10/2021",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    SizedBox(height: 10),
-                    new SizedBox(
-                      width: 120.0,
-                      height: 30.0,
-                      child: RaisedButton(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => LiveStream()));
-                        },
-                        child: Text("Tham gia"),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.green,
+                        width: 2,
                       ),
                     ),
-                  ],
-                )
-              ]),
-            ),
-          )
-        ],
+                    padding: EdgeInsets.all(10),
+                    child: Text(
+                      '15:00 - 19:00',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                          color: Colors.white),
+                    ),
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'Lịch tập với PT Đức Đặng',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.green),
+                      ),
+                      SizedBox(
+                        height: 4,
+                      ),
+                      Text(
+                        'Bài tập: cơ tay - cardio',
+                        style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        "Ngày tập : 25/10/2021",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      SizedBox(height: 10),
+                      new SizedBox(
+                        width: 120.0,
+                        height: 30.0,
+                        child: RaisedButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LiveStream()));
+                          },
+                          child: Text("Tham gia"),
+                        ),
+                      ),
+                    ],
+                  )
+                ]),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
 }
 
-
 class time_day2 extends StatelessWidget {
-
-
   const time_day2({Key? key}) : super(key: key);
 
   @override
@@ -354,7 +352,7 @@ class time_day2 extends StatelessWidget {
             ),
           ),
           SizedBox(height: 10),
-                    Card(
+          Card(
             color: Color(0xff222242),
             child: InkWell(
               onTap: () {
@@ -433,9 +431,6 @@ class time_day2 extends StatelessWidget {
     );
   }
 }
-
-
-
 
 class time_day3 extends StatelessWidget {
   const time_day3({Key? key}) : super(key: key);
@@ -520,7 +515,7 @@ class time_day3 extends StatelessWidget {
             ),
           ),
           SizedBox(height: 10),
-                    Card(
+          Card(
             color: Color(0xff222242),
             child: InkWell(
               onTap: () {
@@ -594,8 +589,8 @@ class time_day3 extends StatelessWidget {
               ]),
             ),
           ),
-                    SizedBox(height: 10),
-                    Card(
+          SizedBox(height: 10),
+          Card(
             color: Color(0xff222242),
             child: InkWell(
               onTap: () {
@@ -674,6 +669,3 @@ class time_day3 extends StatelessWidget {
     );
   }
 }
-
-
-

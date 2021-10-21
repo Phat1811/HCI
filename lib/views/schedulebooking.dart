@@ -318,8 +318,10 @@ class schedule_check extends StatelessWidget {
                     color: Colors.green,
                     textColor: Colors.white,
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => HomePage()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => HomeCalendarPage()));
                     },
                   ),
                 ),
