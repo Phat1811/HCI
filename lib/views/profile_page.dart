@@ -118,7 +118,7 @@ class ProfilePage1 extends StatelessWidget {
                               Text(
                                 "5 Năm",
                                 style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.w600),
+                                    fontSize: 15, fontWeight: FontWeight.w600),
                               )
                             ],
                           ),
@@ -135,7 +135,7 @@ class ProfilePage1 extends StatelessWidget {
                               Text(
                                 "902",
                                 style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.w600),
+                                    fontSize: 15, fontWeight: FontWeight.w600),
                               )
                             ],
                           ),
@@ -151,7 +151,7 @@ class ProfilePage1 extends StatelessWidget {
                               Text(
                                 "100 ngàn / 1 buổi tập ",
                                 style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.w600),
+                                    fontSize: 15, fontWeight: FontWeight.w600),
                               )
                             ],
                           ),
