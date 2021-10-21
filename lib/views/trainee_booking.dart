@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hci_layout/views/schedulebook.dart';
+import 'package:hci_layout/views/schedulebooking.dart';
 
 class booking_trainee extends StatefulWidget {
   @override

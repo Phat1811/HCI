@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:startup_namer/advise.dart';
-import 'package:startup_namer/main.dart';
 
 import 'advise.dart';
 
@@ -14,11 +12,11 @@ class ExercisePage extends StatefulWidget {
 class _ExercisePageState extends State<ExercisePage> {
   final List<Exercise> exercise = [
     Exercise(
-        imaUrl: "assets/tay.jpg", title: "Bài tập tay", page: AdvisePage()),
+        imaUrl: "assets/tay.jpg", title: "Bài tập tay", page: ExercisePage()),
     Exercise(
-        imaUrl: "assets/vai.jpg", title: "Bài tập vai", page: AdvisePage()),
+        imaUrl: "assets/vai.jpg", title: "Bài tập vai", page: ExercisePage()),
     Exercise(
-        imaUrl: "assets/ngực.jpg", title: "Bài tập ngực", page: AdvisePage()),
+        imaUrl: "assets/ngực.jpg", title: "Bài tập ngực", page: ExercisePage()),
   ];
 
   @override

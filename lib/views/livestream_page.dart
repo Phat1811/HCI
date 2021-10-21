@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hci_layout/views/advi.dart';
 
 class LiveStreamPage extends StatefulWidget {
   const LiveStreamPage({Key? key}) : super(key: key);
@@ -99,7 +100,12 @@ class _LiveStreamPageState extends State<LiveStreamPage> {
                                 Icons.call_end,
                                 color: Colors.white,
                               )),
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ExercisePage()));
+                          },
                         ),
                       ),
                     )

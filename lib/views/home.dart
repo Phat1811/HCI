@@ -81,21 +81,29 @@ class _HomePageLocalState extends State<HomePageLocal> {
         imaUrl: "assets/pt5.png",
         name: "Trịnh Ngọc Phương",
         star: "Đánh giá: 4.7/5",
+        skill: "Chuyên môn :Gym",
+        money: "Giá: 2triệu/1 khóa",
         page: ProfilePage5()),
     Category2(
         imaUrl: "assets/pt6.png",
         name: "Lita Trần",
         star: "Đánh giá: 4.7/5",
+        skill: "Chuyên môn :Gym",
+        money: "Giá: 2triệu/1 khóa",
         page: ProfilePage6()),
     Category2(
         imaUrl: "assets/pt7.png",
         name: "Tấn Tài",
         star: "Đánh giá: 4.7/5",
+        skill: "Chuyên môn :Gym",
+        money: "Giá: 2triệu/1 khóa",
         page: ProfilePage7()),
     Category2(
         imaUrl: "assets/pt8.png",
         name: "Phước Tạo",
         star: "Đánh giá: 4.7/5",
+        skill: "Chuyên môn :Gym",
+        money: "Giá: 2triệu/1 khóa",
         page: ProfilePage8()),
   ];
   @override
@@ -227,7 +235,8 @@ class _HomePageLocalState extends State<HomePageLocal> {
                                       ),
                                     ),
                                     Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         SizedBox(
                                           height: 5,
@@ -313,7 +322,7 @@ class _HomePageLocalState extends State<HomePageLocal> {
                     padding: const EdgeInsets.only(top: 40),
                     child: Container(
                         width: double.infinity,
-                        height: 300,
+                        height: 360,
                         child: ListView.builder(
                             itemCount: catego2.length,
                             scrollDirection: Axis.horizontal,
@@ -358,6 +367,28 @@ class _HomePageLocalState extends State<HomePageLocal> {
                                               Icons.star,
                                               color: Colors.yellow,
                                             ),
+                                          ],
+                                        ),
+                                        SizedBox(height: 5),
+                                        Wrap(
+                                          crossAxisAlignment:
+                                              WrapCrossAlignment.center,
+                                          children: [
+                                            Text(catego2[index].skill,
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                )),
+                                          ],
+                                        ),
+                                        SizedBox(height: 5),
+                                        Wrap(
+                                          crossAxisAlignment:
+                                              WrapCrossAlignment.center,
+                                          children: [
+                                            Text(catego2[index].money,
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                )),
                                           ],
                                         ),
                                         RaisedButton(
