@@ -3,7 +3,6 @@ import 'package:hci_layout/main.dart';
 import 'package:hci_layout/views/schedule.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 //import './transaction.dart';
-import 'package:table_calendar/table_calendar.dart';
 //import 'package:test/transaction.dart';
 
 void main() => runApp(MyApp());
@@ -529,8 +528,10 @@ class schedule_check_error extends StatelessWidget {
                     color: Colors.green,
                     textColor: Colors.white,
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => HomePage()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => HomeCalendarPage()));
                     },
                   ),
                 ),
