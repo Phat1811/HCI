@@ -29,7 +29,7 @@ class _HomeCalendarPageState extends State<HomeCalendarPage> {
           children: <Widget>[
             TableCalendar(
               calendarStyle: CalendarStyle(
-                defaultTextStyle: TextStyle(color: Colors.red),
+                defaultTextStyle: TextStyle(color: Colors.white),
                 weekendTextStyle: TextStyle(color: Colors.white),
                 outsideTextStyle: TextStyle(color: Colors.white),
                 todayTextStyle: TextStyle(color: Colors.white),

@@ -51,8 +51,6 @@ class _HomeCalendarPageState extends State<BookPage> {
                         DateRangePickerMonthViewSettings(blackoutDates: [
                       DateTime(2021, 10, 25),
                       DateTime(2021, 10, 28)
-                    ], weekendDays: [
-                      7
                     ], specialDates: [
                       DateTime(2021, 10, 22),
                       DateTime(2021, 10, 23),
@@ -69,11 +67,11 @@ class _HomeCalendarPageState extends State<BookPage> {
                           border: Border.all(
                               color: const Color(0xFFF44436), width: 1),
                           shape: BoxShape.circle),
-                      weekendDatesDecoration: BoxDecoration(
-                          color: const Color(0xFFDFDFDF),
-                          border: Border.all(
-                              color: const Color(0xFFB6B6B6), width: 1),
-                          shape: BoxShape.circle),
+                      // weekendDatesDecoration: BoxDecoration(
+                      //     color:  Colors.white,
+                      //     border: Border.all(
+                      //         color: const Color(0xFFB6B6B6), width: 1),
+                      //     shape: BoxShape.circle),
                       specialDatesDecoration: BoxDecoration(
                           color: Colors.green,
                           border: Border.all(
@@ -128,7 +126,7 @@ class schedule_check extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Text("Số buổi đã đặt : 11 / 15 buổi tập",
+        Text("Số buổi tập đã đặt : 11 / 15 buổi tập",
             style: TextStyle(color: Colors.green, fontSize: 15)),
         Card(
           color: Color(0x222242),
