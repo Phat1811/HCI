@@ -43,7 +43,7 @@ class _HomeCalendarPageState extends State<BookPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Container(
-                  color: Colors.blue[900],
+                  color: Colors.blueGrey,
                   child: SfDateRangePicker(
                     view: DateRangePickerView.month,
                     monthViewSettings:
