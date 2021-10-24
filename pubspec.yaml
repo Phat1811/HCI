@@ -36,6 +36,7 @@ dependencies:
   table_calendar: ^3.0.2
   flutter_datetime_picker: ^1.5.1
   syncfusion_flutter_datepicker: ^19.3.46
+  random_color: ^1.0.5
 
 dev_dependencies:
   flutter_test:

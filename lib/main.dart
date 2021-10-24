@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hci_layout/mode.dart';
+import 'package:hci_layout/views/advi.dart';
+import 'package:hci_layout/views/advise.dart';
 import 'package:hci_layout/views/chat_page.dart';
 import 'package:hci_layout/views/home.dart';
 import 'package:hci_layout/views/livestream_page.dart';
@@ -72,6 +74,7 @@ class _HomePageState extends State<HomePage> {
     HomePageLocal(),
     HomeCalendarPage(),
     ChatPage(),
+    ExercisePage(),
     Settings(),
   ];
   @override
@@ -101,6 +104,11 @@ class _HomePageState extends State<HomePage> {
             BottomNavigationBarItem(
               icon: Icon(Icons.chat),
               label: 'Trò chuyện',
+              backgroundColor: Colors.blue,
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.add_chart_outlined),
+              label: 'Báo cáo',
               backgroundColor: Colors.blue,
             ),
             BottomNavigationBarItem(
