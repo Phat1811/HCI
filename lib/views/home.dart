@@ -23,7 +23,7 @@ class _HomePageLocalState extends State<HomePageLocal> {
         name: "Đức Đặng",
         star: "Đánh giá: 4.5/5",
         skill: "Chuyên môn :Gym",
-        money: "Giá: 100 ngàn / 1 buổi tập",
+        money: "Giá: 100 ngàn / 1 buổi tập ",
         page: ProfilePage1()),
     Category(
         imaUrl: "assets/pt2.jpg",
