@@ -29,34 +29,42 @@ class _HomeCalendarPageState extends State<HomeCalendarPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Container(
-                color: Colors.indigo[800],
-                child: SfDateRangePicker(
-                  view: DateRangePickerView.month,
-                  monthViewSettings:
-                      DateRangePickerMonthViewSettings(specialDates: [
-                    DateTime(2021, 10, 25),
-                  ], showTrailingAndLeadingDates: true),
-                  monthCellStyle: DateRangePickerMonthCellStyle(
-                    blackoutDatesDecoration: BoxDecoration(
-                        color: Colors.green,
-                        border: Border.all(
-                            color: const Color(0xFFF44436), width: 1),
-                        shape: BoxShape.circle),
-                    // weekendDatesDecoration: BoxDecoration(
-                    //     color:  Colors.white,
-                    //     border: Border.all(
-                    //         color: const Color(0xFFB6B6B6), width: 1),
-                    //     shape: BoxShape.circle),
-                    specialDatesDecoration: BoxDecoration(
-                        color: Colors.green,
-                        border: Border.all(
-                            color: const Color(0xFF2B732F), width: 1),
-                        shape: BoxShape.circle),
-                    blackoutDateTextStyle: TextStyle(
-                        color: Colors.white,
-                        decoration: TextDecoration.lineThrough),
-                    specialDatesTextStyle: const TextStyle(color: Colors.white),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(10, 65, 10, 10),
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20.0)),
+                  // color: Colors.indigo[800],
+
+                  child: SfDateRangePicker(
+                    view: DateRangePickerView.month,
+                    monthViewSettings:
+                        DateRangePickerMonthViewSettings(specialDates: [
+                      DateTime(2021, 10, 25),
+                    ], showTrailingAndLeadingDates: true),
+                    monthCellStyle: DateRangePickerMonthCellStyle(
+                      blackoutDatesDecoration: BoxDecoration(
+                          color: Colors.green,
+                          border: Border.all(
+                              color: const Color(0xFFF44436), width: 1),
+                          shape: BoxShape.circle),
+                      // weekendDatesDecoration: BoxDecoration(
+                      //     color:  Colors.white,
+                      //     border: Border.all(
+                      //         color: const Color(0xFFB6B6B6), width: 1),
+                      //     shape: BoxShape.circle),
+                      specialDatesDecoration: BoxDecoration(
+                          color: Colors.green,
+                          border: Border.all(
+                              color: const Color(0xFF2B732F), width: 1),
+                          shape: BoxShape.circle),
+                      blackoutDateTextStyle: TextStyle(
+                          color: Colors.white,
+                          decoration: TextDecoration.lineThrough),
+                      specialDatesTextStyle:
+                          const TextStyle(color: Colors.white),
+                    ),
                   ),
                 ),
               ),
@@ -310,7 +318,7 @@ class time_day2 extends StatelessWidget {
                     '13:00 - 15:00',
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 20,
+                        fontSize: 17,
                         color: Colors.white),
                   ),
                 ),
@@ -385,7 +393,7 @@ class time_day2 extends StatelessWidget {
                     '16:00 - 22:00',
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 20,
+                        fontSize: 17,
                         color: Colors.white),
                   ),
                 ),

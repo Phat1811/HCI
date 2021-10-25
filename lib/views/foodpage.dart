@@ -15,7 +15,43 @@ class _FoodPageState extends State<FoodPage> {
         child: Column(
           children: [
             Padding(
-              padding: EdgeInsets.only(top: 60),
+              padding: const EdgeInsets.only(top: 60),
+              child: Container(
+                height: 100,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10.0)),
+                padding: EdgeInsets.symmetric(horizontal: 15),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      "Tuần này",
+                      style:
+                          TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        buildDateColumn("CN", 24, false),
+                        buildDateColumn("T2", 25, false),
+                        buildDateColumn("T3", 26, true),
+                        buildDateColumn("T4", 27, false),
+                        buildDateColumn("T5", 28, false),
+                        buildDateColumn("T6", 29, false),
+                        buildDateColumn("T7", 30, false),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 30),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -66,7 +102,7 @@ class _FoodPageState extends State<FoodPage> {
                                                 color: Colors.black),
                                             children: [
                                           TextSpan(
-                                            text: "AM",
+                                            text: " Sáng",
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.grey),
@@ -167,7 +203,7 @@ class _FoodPageState extends State<FoodPage> {
                                                 color: Colors.black),
                                             children: [
                                           TextSpan(
-                                            text: "AM",
+                                            text: " Sáng",
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.grey),
@@ -269,7 +305,7 @@ class _FoodPageState extends State<FoodPage> {
                                                 color: Colors.black),
                                             children: [
                                           TextSpan(
-                                            text: "PM",
+                                            text: " Chiều",
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.grey),
@@ -360,7 +396,7 @@ class _FoodPageState extends State<FoodPage> {
                                                 color: Colors.black),
                                             children: [
                                           TextSpan(
-                                            text: "PM",
+                                            text: " Chiều",
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.grey),
@@ -456,7 +492,7 @@ class _FoodPageState extends State<FoodPage> {
                                                 color: Colors.black),
                                             children: [
                                           TextSpan(
-                                            text: "PM",
+                                            text: " Chiều",
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.grey),
@@ -515,6 +551,31 @@ class _FoodPageState extends State<FoodPage> {
             )
           ],
         ),
+      ),
+    );
+  }
+
+  Container buildDateColumn(String weekDay, int date, bool isActive) {
+    return Container(
+      decoration: isActive
+          ? BoxDecoration(
+              color: Color(0xff402fcc), borderRadius: BorderRadius.circular(10))
+          : BoxDecoration(),
+      height: 55,
+      width: 35,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Text(
+            weekDay,
+            style: TextStyle(color: Colors.grey, fontSize: 11),
+          ),
+          Text(date.toString(),
+              style: TextStyle(
+                  color: isActive ? Colors.white : Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold))
+        ],
       ),
     );
   }

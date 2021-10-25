@@ -43,7 +43,9 @@ class _HomeCalendarPageState extends State<BookPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Container(
-                  color: Colors.blueGrey,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20.0)),
                   child: SfDateRangePicker(
                     view: DateRangePickerView.month,
                     monthViewSettings:
@@ -309,7 +311,7 @@ class schedule_check extends StatelessWidget {
               children: <Widget>[
                 new SizedBox(
                   width: 120.0,
-                  height: 70.0,
+                  height: 50.0,
                   child: RaisedButton(
                     child: Text(
                       'Xác nhận',

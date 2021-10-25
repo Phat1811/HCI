@@ -212,7 +212,7 @@ class _HomePageLocalState extends State<HomePageLocal> {
                     padding: const EdgeInsets.only(top: 40),
                     child: Container(
                         width: double.infinity,
-                        height: 350,
+                        height: 360,
                         child: ListView.builder(
                             itemCount: catego.length,
                             scrollDirection: Axis.horizontal,
@@ -322,7 +322,7 @@ class _HomePageLocalState extends State<HomePageLocal> {
                     padding: const EdgeInsets.only(top: 40),
                     child: Container(
                         width: double.infinity,
-                        height: 300,
+                        height: 360,
                         child: ListView.builder(
                             itemCount: catego2.length,
                             scrollDirection: Axis.horizontal,
@@ -333,7 +333,7 @@ class _HomePageLocalState extends State<HomePageLocal> {
                                 child: Column(
                                   children: [
                                     Container(
-                                      height: 220,
+                                      height: 200,
                                       width: 150,
                                       decoration: BoxDecoration(
                                         image: DecorationImage(

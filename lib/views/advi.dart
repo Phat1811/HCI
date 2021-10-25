@@ -95,7 +95,7 @@ class _ExercisePageState extends State<ExercisePage> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
-                      height: 90,
+                      height: 100,
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(10.0)),
@@ -104,6 +104,9 @@ class _ExercisePageState extends State<ExercisePage> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          SizedBox(
+                            height: 10,
+                          ),
                           Text(
                             "Tuần này",
                             style: TextStyle(
@@ -139,6 +142,9 @@ class _ExercisePageState extends State<ExercisePage> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          SizedBox(
+                            height: 10,
+                          ),
                           Text(
                             'Chế độ ăn trong ngày',
                             style: TextStyle(

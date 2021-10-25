@@ -3,6 +3,7 @@ import 'package:hci_layout/mode.dart';
 import 'package:hci_layout/views/advi.dart';
 import 'package:hci_layout/views/advise.dart';
 import 'package:hci_layout/views/chat_page.dart';
+import 'package:hci_layout/views/foodpage.dart';
 import 'package:hci_layout/views/home.dart';
 import 'package:hci_layout/views/livestream_page.dart';
 import 'package:hci_layout/views/profile_page.dart';
@@ -74,7 +75,7 @@ class _HomePageState extends State<HomePage> {
     HomePageLocal(),
     HomeCalendarPage(),
     ChatPage(),
-    ExercisePage(),
+    FoodPage(),
     Settings(),
   ];
   @override
@@ -107,8 +108,8 @@ class _HomePageState extends State<HomePage> {
               backgroundColor: Colors.blue,
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.add_chart_outlined),
-              label: 'Báo cáo',
+              icon: Icon(Icons.local_dining),
+              label: 'Dinh Dưỡng',
               backgroundColor: Colors.blue,
             ),
             BottomNavigationBarItem(
