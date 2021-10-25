@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hci_layout/main.dart';
 
 class FoodPage extends StatefulWidget {
   const FoodPage({Key? key}) : super(key: key);
@@ -548,7 +549,18 @@ class _FoodPageState extends State<FoodPage> {
                   )
                 ],
               ),
-            )
+            ),
+            RaisedButton(
+              color: Color(0xff402fcc),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => HomePage()));
+              },
+              child: Text(
+                "Home",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
           ],
         ),
       ),
