@@ -21,7 +21,7 @@ class _FoodPageState extends State<FoodPage> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 60),
+              padding: const EdgeInsets.only(top: 10),
               child: Container(
                 height: 100,
                 decoration: BoxDecoration(
