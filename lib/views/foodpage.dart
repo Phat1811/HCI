@@ -12,6 +12,11 @@ class _FoodPageState extends State<FoodPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: Icon(Icons.ac_unit, color:Color(0xff402fcc)),
+        title: Text('Chế độ ăn trong ngày'),
+        backgroundColor: Color(0xff402fcc),
+      ),
       body: Container(
         child: Column(
           children: [
@@ -51,21 +56,7 @@ class _FoodPageState extends State<FoodPage> {
                 ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.only(top: 30),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Chế độ ăn trong ngày',
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.w800,
-                    ),
-                  ),
-                ],
-              ),
-            ),
+
             Expanded(
               child: ListView(
                 children: [
@@ -557,7 +548,7 @@ class _FoodPageState extends State<FoodPage> {
                     MaterialPageRoute(builder: (context) => HomePage()));
               },
               child: Text(
-                "Home",
+                "Trang chủ",
                 style: TextStyle(color: Colors.white),
               ),
             ),

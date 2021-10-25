@@ -356,7 +356,7 @@ class _HomePageLocalState extends State<HomePageLocal> {
                                           catego2[index].name,
                                           style: TextStyle(
                                               fontSize: 20,
-                                              color: Colors.white),
+                                              color: Colors.green),
                                         ),
                                         Wrap(
                                           crossAxisAlignment:

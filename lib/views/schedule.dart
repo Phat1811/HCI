@@ -19,6 +19,11 @@ class _HomeCalendarPageState extends State<HomeCalendarPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: Icon(Icons.ac_unit,color: Color(0xff222242),),
+        title: Text('Lịch tập luyện'),
+        backgroundColor: Color(0xff222242),
+      ),
       body: Container(
         width: double.infinity,
         height: double.infinity,
@@ -117,6 +122,7 @@ class _HomeCalendarPageState extends State<HomeCalendarPage> {
           ),
         ),
       ),
+     
     );
   }
 }

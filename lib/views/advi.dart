@@ -328,7 +328,7 @@ class _ExercisePageState extends State<ExercisePage> {
                     MaterialPageRoute(builder: (context) => HomePage()));
               },
               child: Text(
-                "Home",
+                "Trang chủ",
                 style: TextStyle(color: Colors.white),
               ),
             ),

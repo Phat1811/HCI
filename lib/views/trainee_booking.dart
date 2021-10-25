@@ -104,7 +104,7 @@ class _booking_traineeState extends State<booking_trainee> {
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Ngày kết thúc tập luyện : 30 - 11 - 2021",
+                          "Ngày kết thúc tập luyện : 10 - 11 - 2021",
                           style: TextStyle(color: Colors.white, fontSize: 20),
                         ),
                         SizedBox(height: 10),
