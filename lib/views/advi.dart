@@ -38,13 +38,13 @@ class _ExercisePageState extends State<ExercisePage> {
     setState(() {
       _bmi = weight / (height * height);
       if (_bmi! < 18.5) {
-        _message = "You are underweight";
+        _message = "Bạn đang thiếu cân";
       } else if (_bmi! < 25) {
-        _message = 'You body is fine';
+        _message = 'Cơ thể bạn rất tốt';
       } else if (_bmi! < 30) {
-        _message = 'You are overweight';
+        _message = 'Bạn đang thừa cân';
       } else {
-        _message = 'You are obese';
+        _message = 'Bạn đang béo phì';
       }
     });
   }

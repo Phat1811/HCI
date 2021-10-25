@@ -148,47 +148,50 @@ class _HomePageLocalState extends State<HomePageLocal> {
                   )
                 ],
               ),
+              // Padding(
+              //   padding: const EdgeInsets.only(top: 90, left: 20),
+              //   child: Row(
+              //     children: [
+              //       Row(
+              //         children: [
+              //           Text(
+              //             "Tìm",
+              //             style: TextStyle(
+              //                 fontWeight: FontWeight.w700,
+              //                 fontSize: 25,
+              //                 color: Color(0xFF40D876)),
+              //           ),
+              //           Text(
+              //             " HLV",
+              //             style: TextStyle(
+              //                 fontWeight: FontWeight.w700,
+              //                 fontSize: 25,
+              //                 color: Colors.white),
+              //           )
+              //         ],
+              //       )
+              //     ],
+              //   ),
+              // ),
               Padding(
-                padding: const EdgeInsets.only(top: 90, left: 20),
-                child: Row(
-                  children: [
-                    Row(
-                      children: [
-                        Text(
-                          "Find",
-                          style: TextStyle(
-                              fontWeight: FontWeight.w700,
-                              fontSize: 25,
-                              color: Color(0xFF40D876)),
+                padding: const EdgeInsets.only(top: 60),
+                child: Container(
+                  margin: EdgeInsets.symmetric(vertical: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 1),
+                  decoration: BoxDecoration(
+                    color: Color(0xFF232441),
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  child: TextField(
+                    decoration: InputDecoration(
+                        hintText: "Tìm kiếm HLV",
+                        hintStyle: TextStyle(color: Colors.white),
+                        icon: Icon(
+                          Icons.search,
+                          color: Colors.white,
                         ),
-                        Text(
-                          " your Workout",
-                          style: TextStyle(
-                              fontWeight: FontWeight.w700,
-                              fontSize: 25,
-                              color: Colors.white),
-                        )
-                      ],
-                    )
-                  ],
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.symmetric(vertical: 10),
-                padding: EdgeInsets.symmetric(horizontal: 10, vertical: 1),
-                decoration: BoxDecoration(
-                  color: Color(0xFF232441),
-                  borderRadius: BorderRadius.circular(30),
-                ),
-                child: TextField(
-                  decoration: InputDecoration(
-                      hintText: "Tìm kiếm HLV",
-                      hintStyle: TextStyle(color: Colors.white),
-                      icon: Icon(
-                        Icons.search,
-                        color: Colors.white,
-                      ),
-                      border: InputBorder.none),
+                        border: InputBorder.none),
+                  ),
                 ),
               ),
               Expanded(
