@@ -51,28 +51,28 @@ class _HomePageLocalState extends State<HomePageLocal> {
         name: "Trịnh Ngọc Phương",
         star: "Đánh giá: 4.7/5",
         skill: "Chuyên môn :Gym",
-        money: "Giá: 2triệu/1 khóa",
+        money: "Giá: 100 ngàn / 1 buổi tập",
         page: ProfilePage5()),
     Category(
         imaUrl: "assets/pt6.png",
         name: "Lita Trần",
         star: "Đánh giá: 4.7/5",
         skill: "Chuyên môn :Gym",
-        money: "Giá: 2triệu/1 khóa",
+        money: "Giá: 150 ngàn / 1 buổi tập",
         page: ProfilePage6()),
     Category(
         imaUrl: "assets/pt7.png",
         name: "Tấn Tài",
         star: "Đánh giá: 4.7/5",
         skill: "Chuyên môn :Gym",
-        money: "Giá: 2triệu/1 khóa",
+        money: "Giá: 130 ngàn / 1 buổi tập",
         page: ProfilePage7()),
     Category(
         imaUrl: "assets/pt8.png",
         name: "Phước Tạo",
         star: "Đánh giá: 4.7/5",
         skill: "Chuyên môn :Gym",
-        money: "Giá: 2triệu/1 khóa",
+        money: "Giá: 70 ngàn / 1 buổi tập",
         page: ProfilePage8()),
   ];
 

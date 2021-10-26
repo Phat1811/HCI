@@ -352,7 +352,7 @@ class time_day2 extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      "Ngày tập : 26/10/2021",
+                      "Ngày tập : 25/10/2021",
                       style: TextStyle(color: Colors.white),
                     ),
                     SizedBox(height: 10),
@@ -427,7 +427,7 @@ class time_day2 extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      "Ngày tập : 26/10/2021",
+                      "Ngày tập : 25/10/2021",
                       style: TextStyle(color: Colors.white),
                     ),
                     SizedBox(height: 10),

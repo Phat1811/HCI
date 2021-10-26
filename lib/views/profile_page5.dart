@@ -150,7 +150,7 @@ class ProfilePage5 extends StatelessWidget {
                                 style: TextStyle(fontSize: 15),
                               ),
                               Text(
-                                "2 triệu / 1 khóa",
+                                "100 ngàn / 1 buổi tập",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               )
