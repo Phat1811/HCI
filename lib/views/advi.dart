@@ -12,16 +12,16 @@ class ExercisePage extends StatefulWidget {
 
 class _ExercisePageState extends State<ExercisePage> {
   // the controller for the text field associated with "height"
-  final _heightController = TextEditingController();
+  final _heightController = TextEditingController(text: "1.6");
 
   // the controller for the text field associated with "weight"
-  final _weightController = TextEditingController();
+  final _weightController = TextEditingController(text: "55");
 
   // The BMI
   double? _bmi;
 
   // the message at the beginning
-  String _message = 'Please enter your height an weight';
+  String _message = 'Cơ thể bạn rất tốt';
 
   void _calculate() {
     final double? height = double.tryParse(_heightController.value.text);
@@ -298,7 +298,7 @@ class _ExercisePageState extends State<ExercisePage> {
                               Container(
                                 child: Text(
                                   _bmi == null
-                                      ? 'Mời bạn nhập cân nặng và chiều cao'
+                                      ? '21.48'
                                       : _bmi!.toStringAsFixed(2),
                                   style: TextStyle(fontSize: 40),
                                   textAlign: TextAlign.center,
