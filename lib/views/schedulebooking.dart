@@ -154,9 +154,24 @@ class schedule_check extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Text("Số buổi tập đã đặt : 11 / 15 buổi tập",
+        Container(
+          padding: EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("Số buổi tập tối thiểu : 10 buổi tập",
+            style: TextStyle(color: Colors.white, fontSize: 15)),
+            SizedBox(height: 10),
+            Text("Số buổi tập đã được đặt : 11 / 15 buổi tập",
             style: TextStyle(color: Colors.green, fontSize: 15)),
+            SizedBox(height: 10),
+            Text("Số buổi tập tối đa : 15 buổi tập",
+            style: TextStyle(color: Colors.white, fontSize: 15)),
+          ],
+        ),
+        ),
         Card(
           color: Color(0x222242),
           child: Row(children: <Widget>[
@@ -302,10 +317,6 @@ class schedule_check extends StatelessWidget {
               padding: const EdgeInsets.only(top: 20, bottom: 20, left: 50),
               child: Container(
                 width: 300,
-                /*margin: EdgeInsets.symmetric(
-                  vertical: 15,
-                  horizontal: 60,
-                ),*/
                 decoration: BoxDecoration(
                   color: Colors.white,
                   border: Border.all(
@@ -317,14 +328,14 @@ class schedule_check extends StatelessWidget {
                   vertical: 15,
                   horizontal: 15,
                 ),
-                child: Text(
-                  'Tổng cộng: 1 triệu 100 ngàn',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
-                    color: Colors.green,
+                  child: Text(
+                    'Tổng số tiền : 1.100.000 VND',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      color: Colors.green,
+                    ),
                   ),
-                ),
               ),
             ),
           ]),
@@ -334,16 +345,15 @@ class schedule_check extends StatelessWidget {
           child: Align(
             alignment: Alignment.bottomRight,
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 new SizedBox(
-                  width: 120.0,
+                  width: 170.0,
                   height: 50.0,
                   child: RaisedButton(
                     child: Text(
-                      'Xác nhận',
-                      style: TextStyle(fontSize: 20.0),
+                      'Xác nhận đăng ký',
+                      style: TextStyle(fontSize: 18.0),
                     ),
                     color: Colors.green,
                     textColor: Colors.white,
@@ -351,8 +361,8 @@ class schedule_check extends StatelessWidget {
                       showDialog<String>(
                         context: context,
                         builder: (BuildContext context) => AlertDialog(
-                          title: const Text('Thanh toán'),
-                          content: const Text('Thanh toán thành công'),
+                          title: const Text('Đăng ký lịch tập'),
+                          content: const Text('Đặt lịch thành công'),
                           actions: <Widget>[
                             TextButton(
                               onPressed: () {
@@ -362,7 +372,41 @@ class schedule_check extends StatelessWidget {
                                     builder: (context) => HomePage()));
 
                               },
-                              child: const Text('OK'),
+                              child: const Text('Xác nhận'),
+                            ),
+                          ],
+                        ),
+                      );
+                      
+                    },
+                  ),
+                ),
+                SizedBox(width: 10),
+                new SizedBox(
+                  width: 150.0,
+                  height: 50.0,
+                  child: RaisedButton(
+                    child: Text(
+                      'Hủy đăng ký',
+                      style: TextStyle(fontSize: 20.0),
+                    ),
+                    color: Colors.green,
+                    textColor: Colors.white,
+                    onPressed: () {
+                      showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          title: const Text('Hủy đăng ký lịch tập'),
+                          content: const Text('Hủy đăng ký lịch tập thành công'),
+                          actions: <Widget>[
+                            TextButton(
+                              onPressed: () {
+                                Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => HomePage()));
+                              },
+                              child: const Text('Xác nhận'),
                             ),
                           ],
                         ),

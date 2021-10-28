@@ -94,16 +94,13 @@ class _FoodPageState extends State<FoodPage> {
                                                 color: Colors.black),
                                             children: [
                                           TextSpan(
-                                            text: " Sáng",
+                                            text: " AM ",
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.grey),
                                           )
                                         ])),
-                                    Text(
-                                      "2h",
-                                      style: TextStyle(color: Colors.grey),
-                                    )
+                                   
                                   ],
                                 ),
                               ),
@@ -195,16 +192,13 @@ class _FoodPageState extends State<FoodPage> {
                                                 color: Colors.black),
                                             children: [
                                           TextSpan(
-                                            text: " Sáng",
+                                            text: " AM ",
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.grey),
                                           )
                                         ])),
-                                    Text(
-                                      "2h",
-                                      style: TextStyle(color: Colors.grey),
-                                    )
+                                    
                                   ],
                                 ),
                               ),
@@ -297,7 +291,7 @@ class _FoodPageState extends State<FoodPage> {
                                                 color: Colors.black),
                                             children: [
                                           TextSpan(
-                                            text: " Chiều",
+                                            text: " PM ",
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.grey),
@@ -388,16 +382,13 @@ class _FoodPageState extends State<FoodPage> {
                                                 color: Colors.black),
                                             children: [
                                           TextSpan(
-                                            text: " Chiều",
+                                            text: " PM ",
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.grey),
                                           )
                                         ])),
-                                    Text(
-                                      "2h",
-                                      style: TextStyle(color: Colors.grey),
-                                    )
+                                    
                                   ],
                                 ),
                               ),
@@ -484,16 +475,13 @@ class _FoodPageState extends State<FoodPage> {
                                                 color: Colors.black),
                                             children: [
                                           TextSpan(
-                                            text: " Chiều",
+                                            text: " PM ",
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.grey),
                                           )
                                         ])),
-                                    Text(
-                                      "2h",
-                                      style: TextStyle(color: Colors.grey),
-                                    )
+                                 
                                   ],
                                 ),
                               ),
@@ -541,17 +529,17 @@ class _FoodPageState extends State<FoodPage> {
                 ],
               ),
             ),
-            RaisedButton(
-              color: Color(0xff402fcc),
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => HomePage()));
-              },
-              child: Text(
-                "Trang chủ",
-                style: TextStyle(color: Colors.white),
-              ),
-            ),
+            // RaisedButton(
+            //   color: Color(0xff402fcc),
+            //   onPressed: () {
+            //     Navigator.push(context,
+            //         MaterialPageRoute(builder: (context) => HomePage()));
+            //   },
+            //   child: Text(
+            //     "Trang chủ",
+            //     style: TextStyle(color: Colors.white),
+            //   ),
+            // ),
           ],
         ),
       ),

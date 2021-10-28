@@ -43,7 +43,7 @@ class LiveStream extends StatelessWidget {
             children: [
               Container(
                 width: 350,
-                height: 400,
+                height: 440,
                 color: Color(0xff222242),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -88,8 +88,9 @@ class LiveStream extends StatelessWidget {
                                   color: Colors.green,
                                   fontWeight: FontWeight.bold),
                             ),
+                            SizedBox(height: 10),
                             Text(
-                              "Ngày tập: 21/10/2021",
+                              "Ngày tập: 25/10/2021",
                               style: TextStyle(
                                 fontSize: 20,
                                 color: Colors.white,
@@ -141,7 +142,7 @@ class LiveStream extends StatelessWidget {
                                       builder: (context) => LiveStreamPage()));
                             },
                             child: Text(
-                              'Tham gia ',
+                              'Tham gia phòng tập',
                               style: TextStyle(color: Colors.white),
                             ),
                           ),

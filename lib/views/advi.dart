@@ -236,8 +236,8 @@ class _ExercisePageState extends State<ExercisePage> {
                                                     FoodPage()));
                                       },
                                       child: Text(
-                                        "Xem",
-                                        style: TextStyle(color: Colors.white),
+                                        "Xem chế độ ăn trong ngày",
+                                        style: TextStyle(color: Colors.white,fontSize: 10),
                                       ),
                                     ),
                                   ),
@@ -283,11 +283,12 @@ class _ExercisePageState extends State<ExercisePage> {
                                 ),
                                 controller: _weightController,
                               ),
+                              SizedBox(height: 10),
                               RaisedButton(
                                 color: Color(0xff402fcc),
                                 onPressed: _calculate,
                                 child: Text(
-                                  "Xem",
+                                  "Tính chỉ số BMI",
                                   style: TextStyle(color: Colors.white),
                                 ),
                               ),
@@ -329,9 +330,10 @@ class _ExercisePageState extends State<ExercisePage> {
               },
               child: Text(
                 "Trang chủ",
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.white,fontSize: 20),
               ),
             ),
+                          SizedBox(height: 20),
           ],
         ),
       ),

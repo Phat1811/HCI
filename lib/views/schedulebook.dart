@@ -312,7 +312,7 @@ class schedule_check extends StatelessWidget {
                 horizontal: 20,
               ),
               child: Text(
-                'Tổng cộng: 1 triệu 100 ngàn',
+                'Tổng số tiền: 1.100.000 VND',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
@@ -333,7 +333,22 @@ class schedule_check extends StatelessWidget {
                 new SizedBox(
                   width: 120.0,
                   height: 70.0,
-                  child: RaisedButton(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [                
+                      RaisedButton(
+                    child: Text(
+                      'Hủy đặt lịch',
+                      style: TextStyle(fontSize: 20.0),
+                    ),
+                    color: Colors.green,
+                    textColor: Colors.white,
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => HomePage()));
+                    },
+                  ),
+                      RaisedButton(
                     child: Text(
                       'Xác nhận',
                       style: TextStyle(fontSize: 20.0),
@@ -345,6 +360,9 @@ class schedule_check extends StatelessWidget {
                           MaterialPageRoute(builder: (context) => HomePage()));
                     },
                   ),
+                    
+                    ],
+                  )
                 ),
               ],
             ),
@@ -520,7 +538,7 @@ class schedule_check_error extends StatelessWidget {
                 horizontal: 20,
               ),
               child: Text(
-                'Tổng cộng: 1 triệu 100 ngàn',
+                'Tổng số tiền: 1.100.000 VND',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
@@ -541,7 +559,22 @@ class schedule_check_error extends StatelessWidget {
                 new SizedBox(
                   width: 120.0,
                   height: 70.0,
-                  child: RaisedButton(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [                
+                      RaisedButton(
+                    child: Text(
+                      'Hủy đặt lịch',
+                      style: TextStyle(fontSize: 20.0),
+                    ),
+                    color: Colors.green,
+                    textColor: Colors.white,
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => HomePage()));
+                    },
+                  ),
+                      RaisedButton(
                     child: Text(
                       'Xác nhận',
                       style: TextStyle(fontSize: 20.0),
@@ -553,6 +586,9 @@ class schedule_check_error extends StatelessWidget {
                           MaterialPageRoute(builder: (context) => HomePage()));
                     },
                   ),
+                    
+                    ],
+                  )
                 ),
               ],
             ),

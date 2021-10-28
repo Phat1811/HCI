@@ -149,7 +149,7 @@ class ProfilePage1 extends StatelessWidget {
                                 style: TextStyle(fontSize: 15),
                               ),
                               Text(
-                                "100 ngàn / 1 buổi tập",
+                                "100.000 / 1 buổi tập",
                                 style: TextStyle(
                                     fontSize: 15, fontWeight: FontWeight.w600),
                               )
