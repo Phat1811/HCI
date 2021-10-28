@@ -153,7 +153,8 @@ class schedule_check extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-       Text("Số buổi đã đặt : 11 / 15 buổi tập" , style: TextStyle(color: Colors.green,fontSize: 15)),
+        Text("Số buổi đã đặt : 11 / 15 buổi tập",
+            style: TextStyle(color: Colors.green, fontSize: 15)),
         Card(
           color: Color(0x222242),
           child: Row(children: <Widget>[
@@ -312,7 +313,7 @@ class schedule_check extends StatelessWidget {
                 horizontal: 20,
               ),
               child: Text(
-                'Tổng cộng: 1 triệu 100 ngàn',
+                '1.100.000',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
@@ -493,6 +494,19 @@ class schedule_check_error extends StatelessWidget {
                       fontWeight: FontWeight.normal,
                       color: Colors.white),
                 ),
+                new SizedBox(
+                  width: 90.0,
+                  height: 50.0,
+                  child: RaisedButton(
+                    child: Text(
+                      'Hủy đặt lịch',
+                      style: TextStyle(fontSize: 14.0),
+                    ),
+                    color: Colors.green,
+                    textColor: Colors.white,
+                    onPressed: () {},
+                  ),
+                ),
               ],
             )
           ]),
@@ -520,7 +534,7 @@ class schedule_check_error extends StatelessWidget {
                 horizontal: 20,
               ),
               child: Text(
-                'Tổng cộng: 1 triệu 100 ngàn',
+                '1.100.000',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,

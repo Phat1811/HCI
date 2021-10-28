@@ -318,7 +318,7 @@ class schedule_check extends StatelessWidget {
                   horizontal: 15,
                 ),
                 child: Text(
-                  'Tổng cộng: 1 triệu 100 ngàn',
+                  '1.100.000',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
@@ -357,17 +357,15 @@ class schedule_check extends StatelessWidget {
                             TextButton(
                               onPressed: () {
                                 Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => HomePage()));
-
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => HomePage()));
                               },
                               child: const Text('OK'),
                             ),
                           ],
                         ),
                       );
-                      
                     },
                   ),
                 ),
@@ -518,12 +516,25 @@ class schedule_check_error extends StatelessWidget {
                       fontWeight: FontWeight.normal,
                       color: Colors.white),
                 ),
+                new SizedBox(
+                  width: 90.0,
+                  height: 50.0,
+                  child: RaisedButton(
+                    child: Text(
+                      'Hủy đặt lịch',
+                      style: TextStyle(fontSize: 14.0),
+                    ),
+                    color: Colors.green,
+                    textColor: Colors.white,
+                    onPressed: () {},
+                  ),
+                ),
               ],
             )
           ]),
         ),
         SizedBox(
-          height: 10,
+          height: 5,
         ),
         Card(
           color: Color(0xff222242),
@@ -531,7 +542,7 @@ class schedule_check_error extends StatelessWidget {
             Container(
               margin: EdgeInsets.symmetric(
                 vertical: 15,
-                horizontal: 80,
+                horizontal: 30,
               ),
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -545,7 +556,7 @@ class schedule_check_error extends StatelessWidget {
                 horizontal: 20,
               ),
               child: Text(
-                'Tổng cộng: 1 triệu 100 ngàn',
+                '1.100.000',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
