@@ -90,7 +90,7 @@ class LiveStream extends StatelessWidget {
                             ),
                             SizedBox(height: 10),
                             Text(
-                              "Ngày tập: 25/10/2021",
+                              "Ngày tập: 3/11/2021",
                               style: TextStyle(
                                 fontSize: 20,
                                 color: Colors.white,

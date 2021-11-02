@@ -175,7 +175,7 @@ class _time_dayState extends State<time_day> {
                       height: 10,
                     ),
                     Text(
-                      "Ngày tập : 25/10/2021",
+                      "Ngày tập : 3/11/2021",
                       style: TextStyle(color: Colors.white),
                     ),
                     SizedBox(height: 10),
@@ -268,7 +268,7 @@ class _time_dayState extends State<time_day> {
                       height: 10,
                     ),
                     Text(
-                      "Ngày tập : 25/10/2021",
+                      "Ngày tập : 3/11/2021",
                       style: TextStyle(color: Colors.white),
                     ),
                     SizedBox(height: 10),
