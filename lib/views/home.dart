@@ -82,28 +82,28 @@ class _HomePageLocalState extends State<HomePageLocal> {
         name: "Trịnh Ngọc Phương",
         star: "Đánh giá: 4.7/5",
         skill: "Chuyên môn :Gym",
-        money: "Giá: 2triệu/1 khóa",
+        money: "Giá tiền: 150.000 / 1 buổi tập",
         page: ProfilePage5()),
     Category2(
         imaUrl: "assets/pt6.png",
         name: "Lita Trần",
         star: "Đánh giá: 4.7/5",
         skill: "Chuyên môn :Gym",
-        money: "Giá: 2triệu/1 khóa",
+        money: "Giá tiền: 150.000 / 1 buổi tập",
         page: ProfilePage6()),
     Category2(
         imaUrl: "assets/pt7.png",
         name: "Tấn Tài",
         star: "Đánh giá: 4.7/5",
         skill: "Chuyên môn :Gym",
-        money: "Giá: 2triệu/1 khóa",
+        money: "Giá tiền: 150.000 / 1 buổi tập",
         page: ProfilePage7()),
     Category2(
         imaUrl: "assets/pt8.png",
         name: "Phước Tạo",
         star: "Đánh giá: 4.7/5",
         skill: "Chuyên môn :Gym",
-        money: "Giá: 2triệu/1 khóa",
+        money: "Giá tiền: 150.000 / 1 buổi tập",
         page: ProfilePage8()),
   ];
   @override
@@ -239,7 +239,7 @@ class _HomePageLocalState extends State<HomePageLocal> {
                                     ),
                                     Column(
                                       crossAxisAlignment:
-                                          CrossAxisAlignment.start,
+                                          CrossAxisAlignment.center,
                                       children: [
                                         SizedBox(
                                           height: 5,

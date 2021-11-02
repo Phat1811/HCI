@@ -46,7 +46,15 @@ class _HomeCalendarPageState extends State<HomeCalendarPage> {
                     view: DateRangePickerView.month,
                     monthViewSettings:
                         DateRangePickerMonthViewSettings(specialDates: [
-                      DateTime(2021, 10, 25),
+                      DateTime(2021, 11, 3),
+                      DateTime(2021, 11, 5),
+                      DateTime(2021, 11, 6),
+                      DateTime(2021, 11, 7),
+                      DateTime(2021, 11, 8),
+                      DateTime(2021, 11, 9),
+                      DateTime(2021, 11, 10),
+                      DateTime(2021, 11, 12),
+                      DateTime(2021, 11, 13),
                     ], showTrailingAndLeadingDates: true),
                     monthCellStyle: DateRangePickerMonthCellStyle(
                       blackoutDatesDecoration: BoxDecoration(

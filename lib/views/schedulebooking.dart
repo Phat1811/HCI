@@ -78,17 +78,22 @@ class _HomeCalendarPageState extends State<BookPage> {
                     view: DateRangePickerView.month,
                     monthViewSettings:
                         DateRangePickerMonthViewSettings(blackoutDates: [
-                      DateTime(2021, 10, 25),
-                      DateTime(2021, 10, 28)
+                      DateTime(2021, 11, 4),
+                      DateTime(2021, 11, 8),
+                      DateTime(2021, 11, 14),
                     ], specialDates: [
-                      DateTime(2021, 10, 22),
-                      DateTime(2021, 10, 23),
-                      DateTime(2021, 10, 26),
-                      DateTime(2021, 10, 27),
-                      DateTime(2021, 10, 29),
-                      DateTime(2021, 10, 30),
-                      DateTime(2021, 11, 1),
-                      DateTime(2021, 11, 2)
+                      DateTime(2021, 11, 2),
+                      DateTime(2021, 11, 3),
+                      DateTime(2021, 11, 5),
+                      DateTime(2021, 11, 6),
+                      DateTime(2021, 11, 7),
+                      DateTime(2021, 11, 9),
+                      DateTime(2021, 11, 10),
+                      DateTime(2021, 11, 11),
+                      DateTime(2021, 11, 12),
+                      DateTime(2021, 11, 13),
+                      DateTime(2021, 11, 16),
+                      DateTime(2021, 11, 15),
                     ], showTrailingAndLeadingDates: true),
                     monthCellStyle: DateRangePickerMonthCellStyle(
                       blackoutDatesDecoration: BoxDecoration(
@@ -352,7 +357,7 @@ class schedule_check extends StatelessWidget {
                   height: 50.0,
                   child: RaisedButton(
                     child: Text(
-                      'Xác nhận đăng ký',
+                      'Xác nhận',
                       style: TextStyle(fontSize: 18.0),
                     ),
                     color: Colors.green,
